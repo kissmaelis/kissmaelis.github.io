@@ -1,0 +1,104 @@
+.icon-amazon {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/amazon.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/amazon.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-bluesky {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/bluesky.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/bluesky.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-btc {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/btc.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/btc.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-instagram {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/instagram.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/instagram.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-linktree {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/linktree.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/linktree.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-mastodon {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/mastodon.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/mastodon.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-monero {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/monero.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/monero.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-paypal {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/paypal.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/paypal.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-reddit {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/reddit.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/reddit.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-snapchat {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/snapchat.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/snapchat.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-telegram {
+  width: 1.5rem;
+  height: 1.5rem; 
+  -webkit-mask: url("../icons/telegram.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/telegram.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-whatsapp {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/whatsapp.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/whatsapp.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-x {
+  width: 1.5rem;
+  height: 1.5rem;
+  -webkit-mask: url("../icons/x-twitter.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/x-twitter.svg") no-repeat center;
+  mask-size: contain;
+}

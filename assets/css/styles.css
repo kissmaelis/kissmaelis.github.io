@@ -367,7 +367,6 @@ div.boxed p a:hover {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 0;
   font-size: 1rem;
   flex-wrap: wrap;
 }
@@ -548,7 +547,7 @@ a.cta-project:hover {
 }
 
 /* ------------------------------------------------------------------------------- */
-/* Social icons #F50CA0; #FFACEC; */
+/* Social icons  #FFACEC; #F50CA0 */
 /* ------------------------------------------------------------------------------- */
 .icons-social {
   display: flex;
@@ -558,4 +557,10 @@ a.cta-project:hover {
 .icon-social {
   height: 1.5rem;
   border-radius: 0px;
+  background-color: #F50CA0;
+  transition: color 0.2s ease-in, border-color 0.2s ease-in;
+}
+.icon-social:hover {
+  background-color: #FFACEC;
+  transition: color 0.1s ease-out, border-color 0.1s ease-out;
 }
