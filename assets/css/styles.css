@@ -95,7 +95,7 @@ body {
   margin-right: auto;
 }
 @media (max-width: 1100px) {
-  .bio-section, .site-footer, div.boxed, .eyebrow {
+  .bio-section, div.boxed, .eyebrow {
     width: calc(100% - 80px);
   }
 }
@@ -217,8 +217,8 @@ header {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
   background-color: rgba(26, 28, 32, 0.75);
-  border-radius: 12px;
-  padding: 10px;
+  border-radius: 0px 0px 12px 12px;
+  padding: 10px 24px 10px 24px;
 }
 .top {
   display: flex;
@@ -228,7 +228,7 @@ header {
 .top__left {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 40px;
 }
 .top__avatar {
   min-width: 100px;
@@ -363,11 +363,21 @@ div.boxed p a:hover {
 /* ------------------------------------------------------------------------------- */
 /* Footers */
 /* ------------------------------------------------------------------------------- */
+footer {
+  position: fixed;
+  bottom: 0;
+  z-index: 998;
+  padding: 10px;
+  backdrop-filter: blur(16px) saturate(180%);
+  -webkit-backdrop-filter: blur(16px) saturate(180%);
+  background-color: rgba(26, 28, 32, 0.75);
+  border-radius: 12px 12px 0px 0px;
+}
+
 .site-footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  font-size: 1rem;
   flex-wrap: wrap;
 }
 
@@ -378,12 +388,6 @@ div.boxed p a:hover {
 .site-footer a:hover {
   text-decoration: underline;
 }
-
-.footer-left,
-.footer-right {
-  margin: 0.5rem 0;
-}
-
 /* ------------------------------------------------------------------------------- */
 /* Portfolios */
 /* ------------------------------------------------------------------------------- */
@@ -551,11 +555,12 @@ a.cta-project:hover {
 /* ------------------------------------------------------------------------------- */
 .icons-social {
   display: flex;
-  justify-content: flex-end;
-  gap: 0.25rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
 }
 .icon-social {
-  height: 1.5rem;
+  height: 2rem;
   border-radius: 0px;
   background-color: #F50CA0;
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
