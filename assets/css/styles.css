@@ -77,12 +77,12 @@ body {
   font-weight: 400;
 }
 
-.bio-section, .site-footer, section {
+.bio-section, section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
 @media (max-width: 600px) {
-  .bio-section, .site-footer, section {
+  .bio-section, section {
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -364,7 +364,7 @@ div.boxed p a:hover {
 /* Footers */
 /* ------------------------------------------------------------------------------- */
 footer {
-  position: fixed;
+  position: sticky;
   bottom: 0;
   z-index: 998;
   padding: 10px;
