@@ -546,3 +546,16 @@ a.cta-project:hover {
 .bio-links a:hover::before {
   transform: translateX(3px);
 }
+
+/* ------------------------------------------------------------------------------- */
+/* Social icons #F50CA0; #FFACEC; */
+/* ------------------------------------------------------------------------------- */
+.icons-social {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.25rem;
+}
+.icon-social {
+  height: 1.5rem;
+  border-radius: 0px;
+}
