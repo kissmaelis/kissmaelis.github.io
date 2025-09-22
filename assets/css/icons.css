@@ -102,3 +102,19 @@
   mask: url("../icons/x-twitter.svg") no-repeat center;
   mask-size: contain;
 }
+.icon-ethereum {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/ethereum.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/ethereum.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-tiktok {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/tiktok.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/tiktok.svg") no-repeat center;
+  mask-size: contain;
+}
