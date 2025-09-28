@@ -301,7 +301,6 @@ header {
     margin-left: 0;
   }
 }
-
 .overview {
   font-size: 4rem;
   letter-spacing: -0.1875rem;
@@ -316,7 +315,6 @@ header {
     line-height: 3.52rem;
   }
 }
-
 /* ------------------------------------------------------------------------------- */
 /* Page sections */
 /* ------------------------------------------------------------------------------- */
@@ -344,6 +342,7 @@ div.boxed h2 {
 div.boxed h2 {
   margin-top: 20px;
   margin-bottom: 20px;
+  color: #FFACEC;
 }
 div.boxed blockquote {
   font-size: 1rem;
@@ -396,7 +395,6 @@ footer {
   overflow: hidden;
   line-height: 0;
 }
-
 .siema {
   margin: 0;
   display: flex;
@@ -415,7 +413,6 @@ footer {
   margin: 0;
   border-radius: 0 !important;
 }
-
 .slider-controls {
   font-size: 1rem;
   letter-spacing: -0.1rem;
@@ -429,11 +426,9 @@ footer {
   cursor: pointer;
   border-bottom: 1px solid;
 }
-
 div.boxed .slider-heading {
   margin-top: 0;
 }
-
 a.cta-project {
   font-size: 1rem;
   line-height: 1rem;
@@ -446,7 +441,32 @@ a.cta-project {
 a.cta-project:hover {
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
 }
-
+.gradient {
+  border: none;
+  border-radius: 12px;
+  font-size: 1.5rem;
+  line-height: 1rem;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 0.75rem;
+  background: linear-gradient(170deg, hsl(332, 77%, 65%), hsl(305, 64%, 66%), hsl(268, 53%, 53%));
+  background-size: 600%;
+  animation: anime 8s ease infinite;
+}
+.gradient:hover {
+  text-decoration: none;
+}
+@keyframes anime {
+  0% {
+    background-position: 0% 50%;
+  } 
+  50% {
+    background-position: 100% 50%;
+  } 
+  100% {
+    background-position: 0% 50%;
+  }
+}
 /* ------------------------------------------------------------------------------- */
 /* Testimonials */
 /* ------------------------------------------------------------------------------- */
@@ -488,7 +508,7 @@ a.cta-project:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 0.5rem;
   flex-wrap: wrap;
 }
 
@@ -507,7 +527,6 @@ a.cta-project:hover {
 .highlight {
   text-decoration: underline;
 }
-
 .bio-links {
   display: flex;
   gap: 1rem 2rem;
@@ -527,7 +546,8 @@ a.cta-project:hover {
 }
 .bio-links img {
   max-height: 3rem;
-  max-width: 12rem;
+  max-width: 10rem;
+  border-radius:0px;
 }
 .bio-links img:hover {
   animation-name: vibrate-slow;
