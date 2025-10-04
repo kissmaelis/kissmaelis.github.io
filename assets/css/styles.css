@@ -89,14 +89,14 @@ body {
   }
 }
 
-.bio-section, .site-footer, div.boxed, .eyebrow, .top {
+.site-footer, div.boxed, .eyebrow, .top {
   width: 100%;
   max-width: 1020px;
   margin-left: auto;
   margin-right: auto;
 }
 @media (max-width: 1100px) {
-  .bio-section, div.boxed, .eyebrow {
+  div.boxed, .eyebrow {
     width: calc(100% - 80px);
   }
 }
@@ -108,9 +108,9 @@ body {
 }
 
 .testimonial, div.boxed blockquote, div.boxed p,
-div.boxed h2 {
+div.boxed h2, div.boxed .bio-section, div.boxed .icons-social {
   width: 100%;
-  max-width: 480px;
+  max-width: 680px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -241,10 +241,6 @@ header {
     height: 40px;
   }
 }
-.top__brand {
-  font-size: 1.25rem;
-  font-weight: bold;
-}
 .top__right {
   display: flex;
   align-items: center;
@@ -255,36 +251,6 @@ header {
     gap: 20px;
   }
 }
-.top .links {
-  display: flex;
-  align-items: center;
-  gap: 40px;
-}
-.top__link {
-  font-size: 1rem;
-  text-decoration: none;
-  transition: color 0.2s ease-in, border-color 0.2s ease-in;
-}
-.top__link:hover {
-  transition: color 0.1s ease-out, border-color 0.1s ease-out;
-}
-.top__cta {
-  padding: 4px 16px;
-  border-radius: 999px;
-  font-size: 1rem;
-  text-decoration: none;
-  display: inline-flex;
-  transition: color 0.3s;
-}
-.top__cta .arrow {
-  display: inline-block;
-  transition: transform 0.3s ease;
-  margin-left: 0.25em;
-}
-.top__cta:hover .arrow {
-  transform: translateX(3px);
-}
-
 /* ------------------------------------------------------------------------------- */
 /* Intros with big type */
 /* ------------------------------------------------------------------------------- */
@@ -430,17 +396,12 @@ footer {
 div.boxed .slider-heading {
   margin-top: 0;
 }
-a.cta-project {
-  font-size: 1rem;
-  line-height: 1rem;
-  text-decoration: none;
-  border: 1px solid;
-  border-radius: 999px;
-  padding: 2px 8px;
-  transition: color 0.2s ease-in, border-color 0.2s ease-in;
-}
-a.cta-project:hover {
-  transition: color 0.1s ease-out, border-color 0.1s ease-out;
+.bookings {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 .gradient {
   border: none;
@@ -449,7 +410,7 @@ a.cta-project:hover {
   line-height: 1rem;
   text-decoration: none;
   color: white;
-  padding: 0.5rem 0.75rem;
+  padding: 1rem 1rem;
   background: linear-gradient(170deg, hsl(332, 77%, 65%), hsl(305, 64%, 66%), hsl(268, 53%, 53%));
   background-size: 600%;
   animation: anime 8s ease infinite;
