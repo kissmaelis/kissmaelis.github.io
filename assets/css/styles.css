@@ -150,7 +150,7 @@ a img {
 }
 
 p {
-  margin: 0 0 10px 0;
+  margin: 0 0 0.5rem 0;
 }
 
 li {
@@ -290,7 +290,7 @@ section {
   margin: 0;
 }
 section p {
-  margin-bottom: 20px;
+  margin-bottom: 0.75rem;
 }
 section p a {
   text-decoration: underline;
@@ -400,7 +400,7 @@ div.boxed .slider-heading {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 2rem;
+  gap: 1rem 2rem;
   flex-wrap: wrap;
 }
 .gradient {
@@ -429,40 +429,7 @@ div.boxed .slider-heading {
     background-position: 0% 50%;
   }
 }
-/* ------------------------------------------------------------------------------- */
-/* Testimonials */
-/* ------------------------------------------------------------------------------- */
-.testimonial {
-  border-radius: 12px;
-  padding: 80px 40px;
-  text-align: center;
-  margin-bottom: 40px;
-}
-.testimonial blockquote {
-  border-left: none;
-  font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
-  font-size: 1rem;
-  line-height: 2rem;
-  margin: 0 0 2rem;
-  font-style: normal;
-  quotes: "“" "”" "‘" "’";
-}
-.testimonial blockquote p {
-  font-size: 1rem;
-  line-height: 1.5rem;
-}
-.testimonial blockquote p::before {
-  content: open-quote;
-}
-.testimonial blockquote p::after {
-  content: close-quote;
-}
-.testimonial figcaption {
-  font-size: 1rem;
-}
-.testimonial figcaption strong {
-  font-weight: normal;
-}
+
 /* ------------------------------------------------------------------------------- */
 /* Bios, Info, About section */
 /* ------------------------------------------------------------------------------- */
