@@ -107,8 +107,8 @@ body {
   margin-right: auto;
 }
 
-.testimonial, div.boxed blockquote, div.boxed p,
-div.boxed h2, div.boxed .bio-section, div.boxed .icons-social {
+.testimonial, div.boxed blockquote, div.boxed p, div.boxed table, div.boxed iframe,
+div.boxed h2, div.boxed .bio-section, div.boxed .icons-social, {
   width: 100%;
   max-width: 680px;
   margin-left: auto;
@@ -286,7 +286,7 @@ header {
 /* ------------------------------------------------------------------------------- */
 section {
   width: 100%;
-  margin: 0 0 0 0.5rem;
+  margin: 0 0 0.5rem 0;
 }
 section p {
   margin-bottom: 0.75rem;
@@ -534,5 +534,5 @@ ul.lovelist li a {
 
 ul.lovelist li:before {
   content: "❤";
-  padding-right: 1rem;
+  padding-right: 2rem;
 }
