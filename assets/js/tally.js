@@ -1,2 +1,4 @@
-// Load all embeds on the page
-Tally.loadEmbeds();
+document.addEventListener('DOMContentLoaded', () => {
+    // Load all embeds on the page
+    Tally.loadEmbeds();
+});
