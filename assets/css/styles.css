@@ -142,7 +142,6 @@ body {
 img {
   max-width: 100%;
   height: auto;
-  border-radius: 12px;
 }
 
 a img {
@@ -287,7 +286,7 @@ header {
 /* ------------------------------------------------------------------------------- */
 section {
   width: 100%;
-  margin: 0;
+  margin: 0 0 0 0.5rem;
 }
 section p {
   margin-bottom: 0.75rem;
@@ -298,7 +297,6 @@ section p a {
 div.boxed img {
   width: 100%;
   max-width: 1020px;
-  border-radius: 12px;
 }
 div.boxed p,
 div.boxed h2 {
@@ -440,19 +438,6 @@ div.boxed .slider-heading {
   gap: 0.5rem;
   flex-wrap: wrap;
 }
-
-.bio-image {
-  width: 100%;
-}
-@media (min-width: 1100px) {
-  .bio-image {
-    width: 48%;
-  }
-}
-.bio-image img {
-  width: 100%;
-  border-radius: 12px;
-}
 .highlight {
   text-decoration: underline;
 }
@@ -473,10 +458,8 @@ div.boxed .slider-heading {
   text-decoration: none;
   position: relative;
 }
-.bio-links img {
-  max-height: 3rem;
-  max-width: 10rem;
-  border-radius:0px;
+img.bio-link {
+  max-height: 3em;
 }
 .bio-links img:hover {
   animation-name: vibrate-slow;
