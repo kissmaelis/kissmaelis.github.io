@@ -509,6 +509,9 @@ img.bio-link {
   background-color: #F50CA0;
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
 }
+.icon-ter {
+  border-radius: 50%;
+}
 .icon-social:hover {
   background-color: #FFACEC;
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
