@@ -108,7 +108,7 @@ body {
 }
 
 .testimonial, div.boxed blockquote, div.boxed p, div.boxed table, div.boxed iframe,
-div.boxed h2, div.boxed .bio-section, div.boxed .icons-social, {
+div.boxed h2, div.boxed .bio-section, div.boxed .icons-social, div.boxed .collapsible-panel {
   width: 100%;
   max-width: 680px;
   margin-left: auto;
@@ -538,4 +538,46 @@ ul.lovelist li a {
 ul.lovelist li:before {
   content: "❤";
   padding-right: 2rem;
+}
+/* ------------------------------------------------------------------------------- */
+/* Collapsible
+/* ------------------------------------------------------------------------------- */
+.collapsible-panel {
+  width: 100%;
+}
+.collapsible-panel label {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ffacec4d;
+  color: #FFACEC;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: -0.05rem;
+  line-height: 2rem;
+}
+.collapsible-panel label::after {
+  content: '›';
+  display: inline-block;
+  text-align: center;
+  font-size: 32px;
+  width: 1em;
+  transition: transform 0.3s ease;
+  transform-origin: center center;
+  transform: rotate(0deg);
+}
+.collapsible-trigger:checked + label::after {
+  transform: rotate(90deg) translateX(0.25rem);
+}
+
+.collapsible-trigger:checked ~ .collapsible-content {
+  display: block;
+}
+
+.collapsible-content {
+  padding-top: 1rem;
+  display: none;
 }
