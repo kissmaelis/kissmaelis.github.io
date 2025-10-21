@@ -400,6 +400,8 @@ div.boxed .slider-heading {
   justify-content: center;
   gap: 1rem 2rem;
   flex-wrap: wrap;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 .gradient {
   border: none;
@@ -459,11 +461,11 @@ div.boxed .slider-heading {
   position: relative;
 }
 img.bio-link {
-  max-height: 3em;
+  max-height: 2em;
 }
 .bio-links img:hover {
   animation-name: vibrate-slow;
-	animation-duration: 1s;
+	animation-duration: 3s;
 	animation-timing-function: linear;
 	animation-delay: 0s;
 	animation-iteration-count: infinite;
