@@ -12,7 +12,8 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true
     });
 
-    // No autoplay 🎉
+    // next every 10 sec
+    setInterval(() => mySiema.next(), 10000);
 
     // Buttons scoped to this group
     const prevBtn = group.querySelector('.prev');
