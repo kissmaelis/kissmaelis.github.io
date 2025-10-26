@@ -12,9 +12,6 @@ document.addEventListener('DOMContentLoaded', () => {
       loop: true
     });
 
-    // next every 10 sec
-    setInterval(() => mySiema.next(), 10000);
-
     // Buttons scoped to this group
     const prevBtn = group.querySelector('.prev');
     const nextBtn = group.querySelector('.next');
