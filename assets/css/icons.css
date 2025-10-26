@@ -134,3 +134,11 @@
   mask: url("../icons/home.svg") no-repeat center;
   mask-size: contain;
 }
+.icon-pixelfed {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/pixelfed.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/pixelfed.svg") no-repeat center;
+  mask-size: contain;
+}
