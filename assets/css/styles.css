@@ -89,7 +89,7 @@ body {
   }
 }
 
-.site-footer, div.boxed, .eyebrow, .top {
+footer, div.boxed, .eyebrow, .top {
   width: 100%;
   max-width: 1020px;
   margin-left: auto;
@@ -107,8 +107,10 @@ body {
   margin-right: auto;
 }
 
-.testimonial, div.boxed blockquote, div.boxed p, div.boxed table, div.boxed iframe,
-div.boxed h2, div.boxed .bio-section, div.boxed .icons-social, div.boxed .collapsible-panel {
+.testimonial, div.boxed blockquote, div.boxed p, 
+div.boxed table, div.boxed iframe, div.boxed h2,
+div.boxed .bio-section, div.boxed .icons-social,
+div.boxed .collapsible-panel, .site-info {
   width: 100%;
   max-width: 680px;
   margin-left: auto;
@@ -122,6 +124,7 @@ html {
   font-size: 16px;
   scroll-behavior: smooth;
   box-sizing: border-box;
+  text-align: justify;
 }
 @media (max-width: 600px) {
   html {
@@ -171,6 +174,11 @@ hr {
 b, strong {
   font-style: normal;
   font-weight: 600;
+}
+
+small {
+  font-size: 0.75em;
+  line-height: 0;
 }
 
 del {
@@ -337,21 +345,26 @@ footer {
   background-color: rgba(26, 28, 32, 0.75);
   border-radius: 12px 12px 0px 0px;
 }
-
-.site-footer {
+.site-social-bar {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
 }
 
-.site-footer a {
+.site-info a {
   text-decoration: underline;
 }
 
-.site-footer a:hover {
-  text-decoration: underline;
+.site-info-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 0.5rem;
+  gap: 0rem 1.5rem;
 }
+
 /* ------------------------------------------------------------------------------- */
 /* Portfolios */
 /* ------------------------------------------------------------------------------- */
