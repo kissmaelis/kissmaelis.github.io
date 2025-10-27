@@ -476,7 +476,7 @@ div.boxed .slider-heading {
   position: relative;
 }
 img.bio-link {
-  max-height: 2em;
+  max-height: 1.75em;
 }
 .bio-links img:hover {
   animation-name: vibrate-slow;

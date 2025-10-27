@@ -142,3 +142,27 @@
   mask: url("../icons/pixelfed.svg") no-repeat center;
   mask-size: contain;
 }
+.icon-fansly {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/fansly.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/fansly.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-mym {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/mym.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/mym.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-onlyfans {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/onlyfans.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/onlyfans.svg") no-repeat center;
+  mask-size: contain;
+}
