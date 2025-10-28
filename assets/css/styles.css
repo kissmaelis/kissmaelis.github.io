@@ -355,6 +355,10 @@ footer {
   flex-wrap: wrap;
 }
 
+.site-info {
+  padding: 1rem;
+}
+
 .site-info a {
   text-decoration: underline;
 }
@@ -525,9 +529,6 @@ img.bio-link {
   border-radius: 0px;
   background-color: #F50CA0;
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
-}
-.icon-ter {
-  border-radius: 50%;
 }
 .icon-social:hover {
   background-color: #FFACEC;
