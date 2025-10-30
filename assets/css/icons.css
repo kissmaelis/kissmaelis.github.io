@@ -166,3 +166,51 @@
   mask: url("../icons/onlyfans.svg") no-repeat center;
   mask-size: contain;
 }
+.icon-xmark {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/xmark.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/xmark.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-menu {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/menu.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/menu.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-location-map {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/location-map.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/location-map.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-location-pin {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/location-pin.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/location-pin.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-beacons {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/beacons.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/beacons.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-throne {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/throne.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/throne.svg") no-repeat center;
+  mask-size: contain;
+}

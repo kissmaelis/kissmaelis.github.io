@@ -528,6 +528,7 @@ img.bio-link {
   height: 2rem;
   border-radius: 0px;
   background-color: #F50CA0;
+  margin-bottom: 0.5rem;
   transition: color 0.2s ease-in, border-color 0.2s ease-in;
 }
 .icon-social:hover {
