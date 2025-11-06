@@ -34,15 +34,34 @@
 </head>
 <body class="scheme-midnight">
 
-<header class="top">
-  <div class="top__left">
-    <img class="top__avatar" src="./assets/img/logo.png" alt="Name" />
+  <!-- menu toggle (hidden) -->
+  <input id="menu-toggle" class="menu-toggle" type="checkbox" aria-hidden="true" />
+
+  <!-- HEADER -->
+  <header class="top">
+    <div class="top__left">
+      <img class="top__avatar" src="./assets/img/logo.png" alt="kissmaelis" />
+    </div>
+    <nav class="top__right">
+      <a target="_blank" href="https://wa.me/+33773126419?text=kissmaelis.com" aria-label="WhatsApp"><div class="icon-social icon-whatsapp" aria-hidden="true"></div></a>
+    </nav>
+  </header>
+
+  <!-- Fullscreen menu overlay -->
+  <div class="menu-overlay" role="dialog" aria-modal="true" aria-labelledby="menu-title">
+    <label for="menu-toggle" class="menu-close" aria-label="Fermer le menu">
+      <div class="icon-social icon-xmark" aria-hidden="true"></div>
+    </label>
+    <nav class="menu-list" aria-labelledby="menu-title">
+      <h2 id="menu-title">Menu</h2>
+      <ul>
+        <li><a href="./">Accueil | Home</a></li>
+        <li><a href="./rencontre.html">Rencontre moi</a></li>
+        <li><a href="./meet.html">Meet me</a></li>
+      </ul>
+    </nav>
   </div>
-  <nav class="top__right">
-    <a href="https://kissmaelis.com"><div class="icon-social icon-home"></div></a>
-    <a target="_blank" href="https://wa.me/+33773126419?text=kissmaelis.com"><div class="icon-social icon-whatsapp"></div></a>
-  </nav>
-</header>
+
 <section> 
   <div class="boxed">
     <span class="eyebrow">Legal Notice</span>
@@ -88,16 +107,25 @@
 </section>
 <!-- Portfolio end -->
 
-<footer class="site-footer">
-  <div class="icons-social">
-    <a href="https://kissmaelis.com"><div class="icon-social icon-home"></div></a>
-    <a target="_blank" href="https://instagram.com/maeliskiss"><div class="icon-social icon-instagram"></div></a>
-    <a target="_blank" href="https://x.com/kissmaelis"><div class="icon-social icon-x"></div></a>
-    <a target="_blank" href="https://reddit.com/u/kissmaelis"><div class="icon-social icon-reddit"></div></a>
-    <a target="_blank" href="https://bsky.app/profile/kissmaelis.com"><div class="icon-social icon-bluesky"></div></a>
-    <a target="_blank" href="https://www.paypal.com/donate/?hosted_button_id=L5D9VP7CUMXGE"><div class="icon-social icon-paypal"></div></a>
-    <a target="_blank" href="https://coinsend.to/@kissmaelis"><div class="icon-social icon-btc"></div></a>
-  </div>
-</footer>
+  <!-- FOOTER -->
+  <footer>
+    <div class="site-social-bar">
+      <div class="footer-left">
+        <div class="icons-social">
+          <a target="_blank" href="https://instagram.com/maeliskiss" aria-label="Instagram"><div class="icon-social icon-instagram" aria-hidden="true"></div></a>
+          <a target="_blank" href="https://x.com/kissmaelis" aria-label="X / Twitter"><div class="icon-social icon-x" aria-hidden="true"></div></a>
+          <a target="_blank" href="https://bsky.app/profile/kissmaelis.com" aria-label="Bluesky"><div class="icon-social icon-bluesky" aria-hidden="true"></div></a>
+          <a target="_blank" href="https://fans.ly/kissmaelis/t0?r=users" aria-label="Fansly"><div class="icon-social icon-fansly" aria-hidden="true"></div></a>
+          <a target="_blank" href="https://mym.fans/kissmaelis" aria-label="Mym"><div class="icon-social icon-mym" aria-hidden="true"></div></a>
+          <a target="_blank" href="https://onlyfans.com/kissmaelis/c5?ref=493431389" aria-label="OnlyFans"><div class="icon-social icon-onlyfans" aria-hidden="true"></div></a>
+        </div>
+      </div>
+      <div class="footer-right">
+        <label for="menu-toggle" class="menu-opener" role="button" aria-label="Ouvrir le menu">
+          <div class="icon-social icon-menu" aria-hidden="true"></div>
+        </label>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
