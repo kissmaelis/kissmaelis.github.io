@@ -470,6 +470,7 @@ div.boxed .slider-heading {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  transition: transform 0.08s ease;
 }
 .bio-links ul {
   list-style: none;
@@ -483,33 +484,7 @@ img.bio-link {
   max-height: 1.75em;
 }
 .bio-links img:hover {
-  animation-name: vibrate-slow;
-	animation-duration: 3s;
-	animation-timing-function: linear;
-	animation-delay: 0s;
-	animation-iteration-count: infinite;
-	animation-direction: normal;
-	animation-fill-mode: none;
-}
-@keyframes vibrate-slow {
-	0% {
-		transform:translate(0);
-	}
-	20% {
-		transform:translate(2px,-2px);
-	}
-	40% {
-		transform:translate(2px,2px);
-	}
-	60% {
-		transform:translate(-2px,2px);
-	}
-	80% {
-		transform:translate(-2px,-2px);
-	}
-	100% {
-		transform:translate(0);
-	}
+  transform: translateY(-1px);
 }
 .bio-links a:hover {
   text-decoration: none;
@@ -523,7 +498,57 @@ img.bio-link {
   justify-content: center;
   flex-wrap: wrap;
   gap: 0.5rem;
+  margin-bottom: 0.625rem;
 }
+
+/* new: social button with logo + text */
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid #F50CA0;
+  background: rgba(255, 172, 236, 0.03);
+  color: inherit;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.95rem;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.08s ease;
+  line-height: 1; /* helps keep text vertically centered */
+}
+
+/* focus / hover */
+.social-btn:focus {
+  outline: 2px solid #FFACEC;
+  outline-offset: 2px;
+}
+.social-btn:hover {
+  background: rgba(245,12,160,0.06);
+  border-color: #FFACEC;
+  transform: translateY(-1px);
+}
+
+/* make the masked icon slightly smaller inside buttons and remove bottom margin */
+.social-btn .icon-social {
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 6px;
+  flex: 0 0 auto;
+  margin-bottom: 0; /* override global margin that was shifting icon */
+  display: inline-block;
+  vertical-align: middle;
+  background-color: #F50CA0; /* keep mask visible */
+}
+
+/* ensure the label/text aligns with icon */
+.social-btn span {
+  display: inline-block;
+  line-height: 1;
+  vertical-align: middle;
+}
+
+/* preserve original icon hover color behavior (outside buttons) */
 .icon-social {
   height: 2rem;
   border-radius: 0px;
@@ -535,7 +560,6 @@ img.bio-link {
   background-color: #FFACEC;
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
 }
-
 /* ------------------------------------------------------------------------------- */
 /* Meet
 /* ------------------------------------------------------------------------------- */
@@ -591,11 +615,9 @@ ul.lovelist li:before {
 .collapsible-trigger:checked + label::after {
   transform: rotate(90deg) translateX(0.25rem);
 }
-
 .collapsible-trigger:checked ~ .collapsible-content {
   display: block;
 }
-
 .collapsible-content {
   padding-top: 1rem;
   display: none;
