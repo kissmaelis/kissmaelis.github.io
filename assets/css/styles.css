@@ -705,7 +705,9 @@ ul.lovelist li:before {
   display: none;
 }
 
-/* Fullscreen translucent menu overlay */
+/* ------------------------------------------------------------------------------- */
+/* Fullscreen menu overlay (fixed + centered content, title on top, footer links) */
+/* ------------------------------------------------------------------------------- */
 .menu-toggle {
   position: absolute;
   left: -9999px;
@@ -713,141 +715,191 @@ ul.lovelist li:before {
   height: 1px;
   overflow: hidden;
   clip: rect(0 0 0 0);
+  margin: 0;
+  padding: 0;
+  border: 0;
 }
 
-/* overlay hidden by default */
 .menu-overlay {
   position: fixed;
   inset: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;     /* title at the top */
   justify-content: center;
-  background-color: rgba(26, 28, 32, 0.75);
-  -webkit-backdrop-filter: blur(16px) saturate(180%);
-  backdrop-filter: blur(16px) saturate(180%);
-  z-index: 10000;
+  padding: 2.25rem 1.25rem;
+  background-color: rgba(26,28,32,0.80);
+  -webkit-backdrop-filter: blur(14px) saturate(160%);
+  backdrop-filter: blur(14px) saturate(160%);
+  z-index: 99999;
   opacity: 0;
   pointer-events: none;
-  transition: opacity 200ms ease;
-  padding: 2rem;
+  transition: opacity 180ms ease, transform 180ms ease;
+  transform: translateY(6px);
 }
 
-/* reveal when toggle checked */
+/* Reveal when checked */
 #menu-toggle:checked ~ .menu-overlay {
   opacity: 1;
   pointer-events: auto;
+  transform: translateY(0);
 }
 
-/* close button top-right inside overlay (icon-only, no border) */
-.menu-close {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  cursor: pointer;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  background: transparent;
-  border: none;
-  border-radius: 0;
-}
-
-/* make the close icon match other icons (icon-only) */
-.menu-close .icon-social {
-  width: 1.8rem;
-  height: 1.8rem;
-  margin-bottom: 0;
-  background-color: #F50CA0;
-}
-
-/* menu list styling */
+/* container for menu items */
 .menu-list {
+  position: relative;
+  width: 100%;
+  max-width: 720px;
+  margin: 0;
+  padding-top: 3.5rem; /* room for title */
   text-align: center;
   color: #fff;
-  max-width: 720px;
-  width: 100%;
-  margin: 0 1rem;
+
+  /* center the pages list vertically while keeping title positioned at top */
+  min-height: calc(100vh - 4.5rem);
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering of the ul */
+  align-items: center;     /* horizontal centering */
+  box-sizing: border-box;
 }
 
+/* title placed at the top center */
 .menu-list h2 {
-  margin-bottom: 1rem;
+  position: absolute;
+  top: 0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0.125rem 0.5rem;
   color: #FFACEC;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
+/* list layout */
 .menu-list ul {
   list-style: none;
   padding: 0;
   margin: 0;
-  display: grid;
-  gap: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.9rem;
+  align-items: center;
 }
 
-.menu-list a {
-  display: inline-block;
-  padding: 0.75rem 1.25rem;
+/* menu links */
+.menu-list ul li a {
+  display: block;
+  width: 100%;
+  max-width: 420px;
+  padding: 0.85rem 1.25rem;
   border-radius: 12px;
   background: rgba(255,255,255,0.02);
   color: inherit;
   text-decoration: none;
   font-size: 1.125rem;
-  border: 1px solid rgba(255,172,236,0.07);
-  transition: transform 0.08s ease, background-color 0.12s ease;
+  font-weight: 600;
+  border: 1px solid rgba(255,172,236,0.06);
+  transition: transform 90ms ease, background-color 140ms ease, border-color 140ms ease;
+  box-sizing: border-box;
 }
 
-.menu-list a:hover,
-.menu-list a:focus {
+/* hover / focus */
+.menu-list ul li a:hover,
+.menu-list ul li a:focus {
   transform: translateY(-3px);
   background: rgba(245,12,160,0.06);
-  border-color: rgba(255,172,236,0.3);
+  border-color: rgba(255,172,236,0.26);
 }
 
-/* ensure the opener in footer looks good (uses icon-only, no border) */
-.menu-opener {
+/* close button (icon-only) */
+.menu-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  margin: 0;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  padding: 0;
-  margin: 0;
   background: transparent;
   border: none;
   cursor: pointer;
+  z-index: 100001;
 }
 
-/* make the opener icon match other icons (no extra bottom margin) */
+/* size & hover for close/menu icons inside overlay */
+.menu-close .icon-social,
 .menu-opener .icon-social {
   width: 1.8rem;
   height: 1.8rem;
-  margin-bottom: 0;
+  margin: 0;
   background-color: #F50CA0;
-}
-
-/* Hover / focus effects for menu opener & closer to match other icons */
-.menu-opener:hover .icon-social,
-.menu-opener:focus .icon-social,
-.menu-opener:active .icon-social,
-.menu-opener:focus-visible .icon-social,
-.menu-close:hover .icon-social,
-.menu-close:focus .icon-social,
-.menu-close:active .icon-social,
-.menu-close:focus-visible .icon-social {
-  background-color: #FFACEC;
-  transform: translateY(-1px);
   transition: background-color 0.12s ease, transform 0.12s ease;
 }
 
-.site-info a {
-  text-decoration: underline;
+.menu-close:hover .icon-social,
+.menu-close:focus .icon-social,
+.menu-opener:hover .icon-social,
+.menu-opener:focus .icon-social {
+  background-color: #FFACEC;
+  transform: translateY(-1px);
+}
+
+/* small bottom links inside the overlay */
+.menu-footer-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 1.0rem;
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  color: rgba(255,255,255,0.85);
+  font-size: 0.85rem;
+  z-index: 100000;
+}
+
+.menu-footer-links a { color: inherit; opacity: 0.95; }
+.menu-footer-links small { font-size: 0.85rem; display: inline-block; line-height: 1; }
+.menu-footer-links a :hover { text-decoration: underline; }
+
+/* responsive tweaks */
+@media (max-width: 420px) {
+  .menu-list ul li a { font-size: 1rem; padding: 0.75rem 1rem; max-width: 360px; }
+  .menu-list h2 { font-size: 1.25rem; top: .6rem; }
+  .menu-footer-links { font-size: 0.78rem; bottom: 0.9rem; }
+}
+
+/* Center the small legal/privacy links inside .site-info */
+.site-info {
+  text-align: justify;
 }
 
 .site-info-links {
   display: flex;
   justify-content: center;
+  gap: 0.75rem;
   align-items: center;
-  flex-wrap: wrap;
   margin-top: 0.5rem;
-  gap: 0rem 1.5rem;
+  flex-wrap: wrap; /* keep links on one or multiple lines gracefully */
+}
+
+.site-info-links a {
+  display: inline-block;
+  color: inherit;
+  text-decoration: none;
+  opacity: 0.95;
+}
+
+.site-info-links a:hover {
+  text-decoration: underline;
+}
+
+.site-info-links a small {
+  font-size: 0.9rem;
+  line-height: 1;
 }
