@@ -839,10 +839,6 @@ ul.lovelist li:before {
   transition: background-color 0.12s ease, transform 0.12s ease;
 }
 
-.site-info {
-  padding: 1rem;
-}
-
 .site-info a {
   text-decoration: underline;
 }
