@@ -297,7 +297,7 @@ header {
 /* ------------------------------------------------------------------------------- */
 section {
   width: 100%;
-  margin: 0 0 0.5rem 0;
+  margin: 0 0 0.25rem 0;
 }
 section p {
   margin-bottom: 0.75rem;
@@ -316,9 +316,8 @@ div.boxed h2 {
   line-height: 2rem;
 }
 div.boxed h2 {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  color: #FFACEC;
+  margin-top: 12px;
+  margin-bottom: 0.5rem; /* smaller gap under the heading */
 }
 div.boxed blockquote {
   font-size: 1rem;
@@ -333,6 +332,14 @@ div.boxed p a {
 }
 div.boxed p a:hover {
   transition: color 0.1s ease-out, border-color 0.1s ease-out;
+}
+
+/* If a heading is directly followed by icon groups or bookings, tighten the gap */
+div.boxed h2 + .icons-social,
+div.boxed h2 + .bio-links,
+div.boxed h2 + .bookings,
+div.boxed h2 + .slider-controls {
+  margin-top: 0.25rem;
 }
 
 /* ------------------------------------------------------------------------------- */
@@ -705,6 +712,27 @@ ul.lovelist li:before {
   display: none;
 }
 
+/* Make .boxed h2.collapsible-label visually match the collapsible header (static, no input) */
+.boxed h2.collapsible-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #ffacec4d;
+  color: #FFACEC;
+  font-weight: 500;
+  font-size: 1.25rem;
+  letter-spacing: -0.05rem;
+  line-height: 2rem;
+  margin: 0 0 1rem 0;
+  background: transparent;
+  border-radius: 0;
+  cursor: default; /* non-interactive */
+  box-sizing: border-box;
+}
+
+
 /* ------------------------------------------------------------------------------- */
 /* Fullscreen menu overlay (fixed + centered content, title on top, footer links) */
 /* ------------------------------------------------------------------------------- */
@@ -763,10 +791,10 @@ ul.lovelist li:before {
   box-sizing: border-box;
 }
 
-/* title placed at the top center */
-.menu-list h2 {
+/* title placed at the top center (position relative to the overlay so it lines up with .menu-close) */
+.menu-overlay h2 {
   position: absolute;
-  top: 0.5rem;
+  top: 12px; /* same vertical offset as .menu-close */
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
@@ -775,6 +803,34 @@ ul.lovelist li:before {
   font-size: 1.5rem;
   font-weight: 600;
   letter-spacing: 0.02em;
+
+  /* avoid overlapping the close icon on narrow viewports */
+  max-width: calc(100% - 96px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  z-index: 100000;
+}
+
+/* Use the same positioning for the actual h2 inside .menu-list (remove the previous hide) */
+.menu-list h2 {
+  position: absolute;
+  top: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0.125rem 0.5rem;
+  color: #FFACEC;
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  max-width: calc(100% - 96px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  box-sizing: border-box;
+  z-index: 100000;
 }
 
 /* list layout */
@@ -854,24 +910,49 @@ ul.lovelist li:before {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  bottom: 1.0rem;
+  bottom: 1rem;
   display: flex;
-  gap: 0.5rem;
+  gap: 0.6rem;
   align-items: center;
-  color: rgba(255,255,255,0.85);
-  font-size: 0.85rem;
+  justify-content: center;
+  color: rgba(255,255,255,0.9);
+  font-size: 0.95rem;           /* slightly larger than before */
+  line-height: 1.25;
   z-index: 100000;
+  padding: 0 12px;              /* allow breathing room at edges */
+  max-width: calc(100% - 32px);
+  box-sizing: border-box;
+  flex-wrap: wrap;              /* allow wrapping instead of shrinking text */
+  text-align: center;
 }
 
-.menu-footer-links a { color: inherit; opacity: 0.95; }
-.menu-footer-links small { font-size: 0.85rem; display: inline-block; line-height: 1; }
-.menu-footer-links a :hover { text-decoration: underline; }
+.menu-footer-links a {
+  color: inherit;
+  opacity: 0.98;
+  display: inline-block;
+  padding: 2px 6px;
+  white-space: nowrap;          /* keep each link readable on its own line */
+}
 
-/* responsive tweaks */
+.menu-footer-links span {
+  display: inline-block;
+  opacity: 0.85;
+}
+
+/* Small screens: increase tappable area and avoid over-shrinking */
 @media (max-width: 420px) {
-  .menu-list ul li a { font-size: 1rem; padding: 0.75rem 1rem; max-width: 360px; }
-  .menu-list h2 { font-size: 1.25rem; top: .6rem; }
-  .menu-footer-links { font-size: 0.78rem; bottom: 0.9rem; }
+  .menu-footer-links {
+    font-size: 1rem;
+    gap: 0.5rem;
+    bottom: 0.9rem;
+  }
+  .menu-footer-links a {
+    padding: 6px 8px;           /* larger hit area for touch devices */
+  }
+  /* hide separator if space is tight */
+  .menu-footer-links span {
+    display: none;
+  }
 }
 
 /* Center the small legal/privacy links inside .site-info */
@@ -902,4 +983,85 @@ ul.lovelist li:before {
 .site-info-links a small {
   font-size: 0.9rem;
   line-height: 1;
+}
+
+/* ------------------------------------------------------------------------------- */
+/* Site spacing variables & consistent container padding */
+/* ------------------------------------------------------------------------------- */
+:root {
+  --site-gutter: 24px;        /* main horizontal gutter on desktop */
+  --section-vertical: 8px;   /* vertical padding for sections */
+  --boxed-max: 680px;         /* matches existing boxed max-width */
+}
+
+/* Responsive reductions */
+@media (max-width: 900px) {
+  :root { --site-gutter: 18px; --section-vertical: 4px; }
+}
+@media (max-width: 600px) {
+  :root { --site-gutter: 12px; --section-vertical: 2px; }
+}
+
+/* Make header/footer inner padding use the same gutter */
+header {
+  padding: 12px var(--site-gutter);
+}
+.top, footer, div.boxed, .eyebrow {
+  max-width: 1020px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: var(--site-gutter);
+  padding-right: var(--site-gutter);
+  box-sizing: border-box;
+}
+
+/* Footer sticky padding consistent with header */
+footer {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: var(--site-gutter);
+  padding-right: var(--site-gutter);
+}
+
+/* Sections use consistent vertical spacing */
+section,
+.bio-section {
+  padding-top: var(--section-vertical);
+  padding-bottom: var(--section-vertical);
+}
+
+/* .boxed is the site content wrapper — give consistent inner padding */
+div.boxed {
+  padding: calc(var(--section-vertical) * 0.8) var(--site-gutter);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+/* Keep inner boxed content constrained to the same readable width */
+div.boxed,
+.testimonial,
+.site-info,
+div.boxed p,
+div.boxed h2 {
+  max-width: var(--boxed-max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Ensure the small site-info links align with the global gutter when inside boxed */
+.site-info {
+  padding-left: 0;
+  padding-right: 0;
+  text-align: justify;        /* restore justified body text */
+  text-justify: inter-word;   /* improves justification on some browsers */
+}
+
+/* keep the small links centered (unchanged) */
+.site-info-links {
+  display: flex;
+  justify-content: center;
+  gap: 0.75rem;
+  align-items: center;
+  margin-top: 0.5rem;
+  flex-wrap: wrap;
 }
