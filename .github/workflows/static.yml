@@ -40,7 +40,9 @@ jobs:
         run: |
           if compgen -G "dist/assets/css/*.css" > /dev/null; then
             for f in dist/assets/css/*.css; do
-              npx -y csso-cli@6 "$f" --output "$f"
+              # use csso-cli without pinning to a non-existent version
+              # (npx will install the latest compatible version)
+              npx -y csso-cli "$f" --output "$f"
             done
           fi
 
