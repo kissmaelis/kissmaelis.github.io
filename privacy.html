@@ -39,7 +39,16 @@
   <!-- HEADER -->
   <header class="top">
     <div class="top__left">
-      <img class="top__avatar" src="./assets/img/logo.png" alt="kissmaelis" />
+      <picture>
+        <source type="image/webp"
+                srcset="assets/img/logo-1x.webp 100w, assets/img/logo-2x.webp 200w, assets/img/logo-3x.webp 300w"
+                sizes="100px">
+        <img class="top__avatar"
+            src="assets/img/logo-3x.webp"
+            srcset="assets/img/logo-1x.webp 100w, assets/img/logo-2x.webp 200w, assets/img/logo-3x.webp 300w"
+            sizes="100px"
+            width="100" height="50" alt="kissmaelis">
+      </picture>
     </div>
     <nav class="top__right">
       <a target="_blank" href="https://wa.me/+33773126419?text=kissmaelis.com" aria-label="WhatsApp"><div class="icon-social icon-whatsapp" aria-hidden="true"></div></a>

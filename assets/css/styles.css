@@ -239,12 +239,16 @@ header {
   gap: 40px;
 }
 .top__avatar {
-  min-width: 100px;
+  width: 100px;       /* logical display size */
   height: 50px;
+  display: block;
+  object-fit: contain; /* preserve aspect ratio */
+  image-rendering: auto;
+  flex: 0 0 auto;
 }
 @media (max-width: 600px) {
   .top__avatar {
-    min-width: 100px;
+    width: 100px;
     height: 40px;
   }
 }

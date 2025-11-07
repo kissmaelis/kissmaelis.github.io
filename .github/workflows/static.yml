@@ -1,0 +1,68 @@
+name: Optimize & deploy (minify + Pages)
+
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Prepare dist copy
+        run: |
+          rm -rf dist
+          mkdir -p dist
+          # copy working tree into dist (omit .git and node_modules)
+          shopt -s dotglob && cp -R . dist/
+          rm -rf dist/.git dist/node_modules dist/.github
+
+      - name: Minify CSS (csso)
+        run: |
+          if compgen -G "dist/assets/css/*.css" > /dev/null; then
+            for f in dist/assets/css/*.css; do
+              npx -y csso-cli@6 "$f" --output "$f"
+            done
+          fi
+
+      - name: Minify JS (terser)
+        run: |
+          if compgen -G "dist/assets/js/*.js" > /dev/null; then
+            for f in dist/assets/js/*.js; do
+              npx -y terser@5 "$f" -c -m -o "$f"
+            done
+          fi
+
+      - name: Minify HTML (html-minifier-terser)
+        run: |
+          find dist -name '*.html' -print0 | while IFS= read -r -d '' f; do
+            npx -y html-minifier-terser@7 \
+              --collapse-whitespace --remove-comments --remove-redundant-attributes \
+              --remove-empty-attributes --minify-css true --minify-js true \
+              --input-dir "$(dirname "$f")" --output "$f" "$f" || true
+          done
+
+      - name: Ensure proper MIME for assets (optional)
+        run: |
+          # no-op; kept for future steps (set caching headers, fingerprinting, etc.)
+
+      - name: Deploy to gh-pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          publish_branch: gh-pages
