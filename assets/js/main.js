@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{document.querySelectorAll(".slider-group").forEach(e=>{const t=e.querySelector(".siema"),r=new Siema({selector:t,duration:400,easing:"ease-out",perPage:1,loop:!0}),n=e.querySelector(".prev"),o=e.querySelector(".next");n&&o&&(n.addEventListener("click",()=>r.prev()),o.addEventListener("click",()=>r.next()))})});
