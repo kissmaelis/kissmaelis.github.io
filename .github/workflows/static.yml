@@ -27,9 +27,14 @@ jobs:
         run: |
           rm -rf dist
           mkdir -p dist
-          # copy working tree into dist (omit .git and node_modules)
-          shopt -s dotglob && cp -R . dist/
-          rm -rf dist/.git dist/node_modules dist/.github
+          # copy repository files into dist without recursing into dist itself
+          # rsync is safe and available on ubuntu runners
+          rsync -a --delete \
+            --exclude='.git' \
+            --exclude='dist' \
+            --exclude='node_modules' \
+            --exclude='.github' \
+            ./ dist/
 
       - name: Minify CSS (csso)
         run: |
