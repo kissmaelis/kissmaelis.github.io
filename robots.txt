@@ -1,0 +1,5 @@
+# robots.txt — allow all, point to sitemap
+User-agent: *
+Allow: /
+
+Sitemap: https://kissmaelis.com/sitemap.xml
