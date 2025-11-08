@@ -12,6 +12,9 @@ jobs:
       pages: write
       id-token: write
 
+    env:
+      BASE_URL: "https://kissmaelis.com" # adjust if different
+
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -21,14 +24,13 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: "20"
 
       - name: Prepare dist copy
         run: |
           rm -rf dist
           mkdir -p dist
           # copy repository files into dist without recursing into dist itself
-          # rsync is safe and available on ubuntu runners
           rsync -a --delete \
             --exclude='.git' \
             --exclude='dist' \
@@ -36,12 +38,47 @@ jobs:
             --exclude='.github' \
             ./ dist/
 
+      - name: Generate sitemap.xml
+        run: |
+          node -e '
+          const fs = require("fs");
+          const path = require("path");
+          const dist = path.resolve("dist");
+          const base = process.env.BASE_URL || "https://kissmaelis.com";
+          function walk(dir){
+            const items = [];
+            for(const name of fs.readdirSync(dir)){
+              const full = path.join(dir, name);
+              const stat = fs.statSync(full);
+              if(stat.isDirectory()){
+                if(name === "assets" || name === "node_modules" || name === ".git") continue;
+                walk(full).forEach(i => items.push(i));
+              } else if(/\.html$/i.test(name)){
+                const rel = path.relative(dist, full).split(path.sep).join("/");
+                if(rel.toLowerCase() === "sitemap.xml") return;
+                items.push({ full, rel, mtime: stat.mtime });
+              }
+            }
+            return items;
+          }
+          const pages = walk(dist);
+          const urls = pages.map(p => {
+            const loc = p.rel.toLowerCase() === "index.html" ? "/" : "/" + p.rel.replace(/\.html$/i, "");
+            const lastmod = new Date(p.mtime).toISOString();
+            return { loc: base.replace(/\/$/, "") + loc, lastmod };
+          });
+          const xml = ["<?xml version=\"1.0\" encoding=\"UTF-8\"?>",
+            "<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\">",
+            ...urls.map(u => `  <url>\n    <loc>${u.loc}</loc>\n    <lastmod>${u.lastmod}</lastmod>\n    <changefreq>monthly</changefreq>\n    <priority>0.8</priority>\n  </url>`),
+            "</urlset>"].join("\n");
+          fs.writeFileSync(path.join(dist,"sitemap.xml"), xml, "utf8");
+          console.log("sitemap.xml generated with", urls.length, "entries");
+          '
+
       - name: Minify CSS (csso)
         run: |
           if compgen -G "dist/assets/css/*.css" > /dev/null; then
             for f in dist/assets/css/*.css; do
-              # use csso-cli without pinning to a non-existent version
-              # (npx will install the latest compatible version)
               npx -y csso-cli "$f" --output "$f"
             done
           fi
@@ -50,14 +87,14 @@ jobs:
         run: |
           if compgen -G "dist/assets/js/*.js" > /dev/null; then
             for f in dist/assets/js/*.js; do
-              npx -y terser@5 "$f" -c -m -o "$f"
+              npx -y terser "$f" -c -m -o "$f"
             done
           fi
 
       - name: Minify HTML (html-minifier-terser)
         run: |
           find dist -name '*.html' -print0 | while IFS= read -r -d '' f; do
-            npx -y html-minifier-terser@7 \
+            npx -y html-minifier-terser \
               --collapse-whitespace --remove-comments --remove-redundant-attributes \
               --remove-empty-attributes --minify-css true --minify-js true \
               --input-dir "$(dirname "$f")" --output "$f" "$f" || true
@@ -65,12 +102,11 @@ jobs:
 
       - name: Ensure proper MIME for assets (optional)
         run: |
-          # no-op; kept for future steps (set caching headers, fingerprinting, etc.)
+          echo "skip (placeholder) - set caching headers / gzip in hosting if needed"
 
       - name: Deploy to gh-pages
         uses: peaceiris/actions-gh-pages@v3
         with:
-          # use a PAT stored in repo secrets when GITHUB_TOKEN push is blocked
           personal_token: ${{ secrets.GH_PAGES_PAT }}
           publish_dir: ./dist
           publish_branch: gh-pages
