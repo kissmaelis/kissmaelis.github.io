@@ -1,1 +1,60 @@
-body.scheme-midnight{background-color:#1a1c20;color:#fffff5}body.scheme-midnight ::selection{background:#fffff5;color:#1a1c20;text-shadow:none}body.scheme-midnight .testimonial,body.scheme-midnight section.bg-alt{background-color:#27282a}body.scheme-midnight a.cta-project:hover{border-color:#fffff5}body.scheme-midnight .slider-controls button,body.scheme-midnight a.cta-project,body.scheme-midnight hr{border-color:#919297}body.scheme-midnight blockquote{border-color:#7b7d80}body.scheme-midnight .bio-links a,body.scheme-midnight .bio-text p,body.scheme-midnight .testimonial figcaption strong,body.scheme-midnight .top__brand,body.scheme-midnight .top__link:hover,body.scheme-midnight a.cta-project:hover,body.scheme-midnight div.boxed p a:hover{color:#fffff5}body.scheme-midnight .eyebrow,body.scheme-midnight .links a,body.scheme-midnight .site-footer,body.scheme-midnight .site-footer a,body.scheme-midnight .slider-controls,body.scheme-midnight .testimonial,body.scheme-midnight .testimonial p,body.scheme-midnight a.cta-project,body.scheme-midnight del,body.scheme-midnight p,body.scheme-midnight pre code{color:#919297}body.scheme-midnight .testimonial figcaption,body.scheme-midnight blockquote,body.scheme-midnight blockquote a,body.scheme-midnight blockquote p{color:#7b7d80}body.scheme-midnight .top__cta{background-color:#fbfbe5;color:#1a1c20}body.scheme-midnight .top__cta a{color:#1a1c20}
+body.scheme-midnight {
+  background-color: #1a1c20;
+  color: #fffff5;
+}
+body.scheme-midnight ::selection {
+  background: #fffff5;
+  color: #1a1c20;
+  text-shadow: none;
+}
+body.scheme-midnight section.bg-alt,
+body.scheme-midnight .testimonial {
+  background-color: #27282a;
+}
+body.scheme-midnight a.cta-project:hover {
+  border-color: #fffff5;
+}
+body.scheme-midnight blockquote,
+body.scheme-midnight hr,
+body.scheme-midnight .slider-controls button,
+body.scheme-midnight a.cta-project {
+  border-color: #919297;
+}
+body.scheme-midnight blockquote {
+  border-color: #7b7d80;
+}
+body.scheme-midnight .top__brand,
+body.scheme-midnight div.boxed p a:hover,
+body.scheme-midnight .testimonial figcaption strong,
+body.scheme-midnight .top__link:hover,
+body.scheme-midnight .bio-text p,
+body.scheme-midnight .bio-links a,
+body.scheme-midnight a.cta-project:hover {
+  color: #fffff5;
+}
+body.scheme-midnight .links a,
+body.scheme-midnight .eyebrow,
+body.scheme-midnight p,
+body.scheme-midnight pre code,
+body.scheme-midnight del,
+body.scheme-midnight .slider-controls,
+body.scheme-midnight .testimonial,
+body.scheme-midnight .testimonial p,
+body.scheme-midnight .site-footer,
+body.scheme-midnight .site-footer a,
+body.scheme-midnight a.cta-project {
+  color: #919297;
+}
+body.scheme-midnight .testimonial figcaption,
+body.scheme-midnight blockquote,
+body.scheme-midnight blockquote p,
+body.scheme-midnight blockquote a {
+  color: #7b7d80;
+}
+body.scheme-midnight .top__cta {
+  background-color: #fbfbe5;
+  color: #1a1c20;
+}
+body.scheme-midnight .top__cta a {
+  color: #1a1c20;
+}
