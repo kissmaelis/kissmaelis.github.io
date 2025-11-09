@@ -75,13 +75,13 @@ jobs:
           console.log("sitemap.xml generated with", urls.length, "entries");
           '
 
-      - name: Minify CSS (csso)
-        run: |
-          if compgen -G "dist/assets/css/*.css" > /dev/null; then
-            for f in dist/assets/css/*.css; do
-              npx -y csso-cli "$f" --output "$f"
-            done
-          fi
+ #     - name: Minify CSS (csso)
+ #       run: |
+ #         if compgen -G "dist/assets/css/*.css" > /dev/null; then
+ #           for f in dist/assets/css/*.css; do
+#              npx -y csso-cli "$f" --output "$f"
+#            done
+#          fi
 
       - name: Minify JS (terser)
         run: |
