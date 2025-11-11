@@ -100,19 +100,13 @@ footer, div.boxed, .eyebrow, .top {
     width: calc(100% - 80px);
   }
 }
-.overview {
-  width: 100%;
-  max-width: 800px;
-  margin-left: auto;
-  margin-right: auto;
-}
 
 .testimonial, div.boxed blockquote, div.boxed p, 
 div.boxed table, div.boxed iframe, div.boxed h2,
 div.boxed .bio-section, div.boxed .icons-social,
-div.boxed .collapsible-panel, .site-info {
+div.boxed .collapsible-panel, .site-info, .overview  {
   width: 100%;
-  max-width: 680px;
+  max-width: 1020px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -1015,7 +1009,7 @@ ul.lovelist li:before {
 :root {
   --site-gutter: 24px;        /* main horizontal gutter on desktop */
   --section-vertical: 8px;   /* vertical padding for sections */
-  --boxed-max: 680px;         /* matches existing boxed max-width */
+  --boxed-max: 800px;         /* matches existing boxed max-width */
 }
 
 /* Responsive reductions */
