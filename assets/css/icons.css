@@ -222,3 +222,11 @@
   mask: url("../icons/youpay.svg") no-repeat center;
   mask-size: contain;
 }
+.icon-luxylist {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/luxylist.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/luxylist.svg") no-repeat center;
+  mask-size: contain;
+}
