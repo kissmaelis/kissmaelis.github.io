@@ -58,8 +58,8 @@
 
   <!-- Umami tracking tool -->   
   <script defer src="https://cloud.umami.is/script.js" data-website-id="d5f9fa12-9345-43fc-b7f2-9efaa40f7839"></script>
-  <!-- CommentBox -->   
-  <script src="https://unpkg.com/commentbox.io/dist/commentBox.min.js"></script>
+  <!-- Tally -->   
+  <script defer src="https://tally.so/widgets/embed.js"></script>
 </head>
 <body class="scheme-midnight">
 
@@ -114,16 +114,17 @@
   <div class="boxed">
     <span class="eyebrow">Livre d'or</span>
     <h1 class="overview">GUESTBOOK</h1>
-    <p></p>
   </div>
 </section>
 <section>
   <div class="boxed">
-    <div class="commentbox"></div>
-    <script>commentBox('5659340690161664-proj', {
-      textColor: '#fffff5', 
-      subtextColor: '#7b7d80', 
-    })</script>
+    <div class="collapsible-panel">
+    <input class="collapsible-trigger" id="rendez-vous" type="checkbox" checked />
+    <label for="rendez-vous">Ecrivez-moi un message — Write me a message</label>
+    <div class="collapsible-content">
+      <p><a target="_blank" href="https://tally.so/r/lbbl6o">Laissez un commentaire</a> si vous m'avez déjà rencontré. — <a target="_blank" href="https://tally.so/r/lbbl6o">Leave a comment</a> if we already met.</p>
+      <iframe data-tally-src="https://tally.so/embed/lbbl6o?alignLeft=1&hideTitle=1&transparentBackground=1&dynamicHeight=1" loading="lazy" width="100%" height="472" frameborder="0" marginheight="0" marginwidth="0" title="Livre d'or - Guestbook"></iframe>
+    </div>
   </div>
 </section>
 <section>
