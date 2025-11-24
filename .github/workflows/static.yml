@@ -36,6 +36,7 @@ jobs:
             --exclude='dist' \
             --exclude='node_modules' \
             --exclude='.github' \
+            --exclude='blog' \
             ./ dist/
 
       - name: Generate sitemap.xml
