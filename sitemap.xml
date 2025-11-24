@@ -1,44 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>https://kissmaelis.com/blog/_includes/layout</loc>
+    <lastmod>2025-11-24T18:01:22.399Z</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://kissmaelis.com/guestbook</loc>
-    <lastmod>2025-11-19T22:00:38.310Z</lastmod>
+    <lastmod>2025-11-24T18:01:22.399Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kissmaelis.com/</loc>
-    <lastmod>2025-11-19T22:00:38.310Z</lastmod>
+    <lastmod>2025-11-24T18:01:22.399Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kissmaelis.com/legal</loc>
-    <lastmod>2025-11-19T22:00:38.310Z</lastmod>
+    <lastmod>2025-11-24T18:01:22.399Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kissmaelis.com/links</loc>
-    <lastmod>2025-11-19T22:00:38.310Z</lastmod>
+    <lastmod>2025-11-24T18:01:22.399Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kissmaelis.com/meet</loc>
-    <lastmod>2025-11-19T22:00:38.310Z</lastmod>
+    <lastmod>2025-11-24T18:01:22.399Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kissmaelis.com/privacy</loc>
-    <lastmod>2025-11-19T22:00:38.310Z</lastmod>
+    <lastmod>2025-11-24T18:01:22.400Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://kissmaelis.com/rencontre</loc>
-    <lastmod>2025-11-19T22:00:38.310Z</lastmod>
+    <lastmod>2025-11-24T18:01:22.400Z</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
