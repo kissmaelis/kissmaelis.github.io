@@ -1,4 +1,4 @@
-const activityPubPlugin = require('eleventy-plugin-activity-pub');
+import { activityPubPlugin } from 'eleventy-plugin-activity-pub';
 
 export default async function(eleventyConfig) {
 	// Configure Eleventy
