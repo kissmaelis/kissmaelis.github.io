@@ -230,3 +230,19 @@
   mask: url("../icons/luxylist.svg") no-repeat center;
   mask-size: contain;
 }
+.icon-manyvids {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/manyvids.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/manyvids.svg") no-repeat center;
+  mask-size: contain;
+}
+.icon-faphouse {
+  width: 2rem;
+  height: 2rem;
+  -webkit-mask: url("../icons/faphouse.svg") no-repeat center;
+  -webkit-mask-size: contain;
+  mask: url("../icons/faphouse.svg") no-repeat center;
+  mask-size: contain;
+}
