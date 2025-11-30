@@ -1,42 +1,54 @@
 ---
 layout: base
-title: Blog
-description: 'All blog posts can be found here'
-pagination:
-  data: collections.allPosts
-  size: 8
-permalink: '/{% if pagination.pageNumber >=1 %}page-{{ pagination.pageNumber + 1 }}/{% endif %}index.html'
+permalink: /index.html
+title: 'Eleventy Excellent'
+description: 'Eleventy starter using modern CSS, fluid type, fluid spacing, flexible layout and progressive enhancement.'
+blog:
+  title: 'Blog'
+  intro: "I'm showing the last 4 blog posts, but there might be more!"
 ---
 
 <div class="wrapper">
-  <header class="full | section" style="--spot-color: var(--color-secondary)">
-    <div class="section__inner flow region" style="--region-space-top: var(--space-xl-2xl)">
+  <header class="full | section" style="--spot-color: var(--color-primary)">
+    <div class="section__inner flow region">
       <h1 class="text-center" style="color: var(--color-light);">{{ title }}</h1>
     </div>
-
-    {% svg "divider/edgy", null, "divider" %}
+    {% svg "divider/waves", null, "divider" %}
   </header>
 
-  <div class="region flow prose" style="--region-space-top: var(--space-xl-2xl)">
-    <p>This blog has a pagination of <strong>{{ pagination.size }}</strong> posts per page.<br>
-      The pagination is only shown if there are more posts ({{ collections.posts.length }}) than items per
-      page ({{ pagination.size }}).
-    </p>
-  </div>
+  <article class="full | region">
+    <div class="prose wrapper flow">
+      <h2 id="an-eleventy-starter">An Eleventy starter</h2>
+      <p>
+        Built around a CSS workflow that emphasizes guiding browser styling rather than micromanaging it. It
+        incorporates progressive enhancement, fluid type and spacing, and utilizes modern CSS features for
+        layout. The goal is to develop frontends that provide a great experience across all devices,
+        connection speeds, and usage contexts.
+      </p>
+      <p>
+        <strong>This is <a href="https://github.com/madrilene/eleventy-excellent/">version {{ pkg.version }}</a>.</strong> I keep a
+        <a href="https://github.com/madrilene/eleventy-excellent/tree/v1">branch of v1</a>,
+        <a href="https://github.com/madrilene/eleventy-excellent/tree/v2">v2</a> and <a href="https://github.com/madrilene/eleventy-excellent/tree/v3">v3</a>. I  tried to <a href="/get-started/#docs-lol">document most features and methodologies</a>.
+      </p>
+      <p><strong>Have fun</strong> and let me know if you find any issues or have ideas for improvements!</p>
+    </div>
+  </article>
 
-  <custom-masonry layout="50-50">
-		{% asyncEach item in pagination.items %}
-			{% include "partials/card-blog.njk" %}
-		{% endeach %}
-	</custom-masonry>
-
-  <!-- set collection to paginate -->
-  {% set collectionToPaginate = collections.posts %}
-  <!-- set target pagination settings in meta.js -->
-  {% set metaKey = "blog" %}
-  <!-- if the number of items in the collection is greater than the number of items shown on one page -->
-  {% if collectionToPaginate.length > pagination.size %}
-    <!-- include pagination -->
-    {% include 'partials/pagination.njk' %}
-  {% endif %}
+  <section class="full | region">
+    <div class="prose wrapper flow">
+      <h2>{{ blog.title }}</h2>
+      {% if blog.intro %}
+        <p>{{ blog.intro }}</p>
+      {% endif %}
+      <div class="feature |  region region-space-l">
+        <custom-masonry layout="50-50">
+          {% set itemList = collections.allPosts %}
+					{% asyncEach item in itemList.slice(0, 4) %}
+            {% set headingLevel = "h3" %}
+						{% include "partials/card-blog.njk" %}
+					{% endeach %}
+        </custom-masonry>
+      </div>
+    </div>
+  </section>
 </div>
