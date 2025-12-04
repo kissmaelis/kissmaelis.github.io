@@ -30,7 +30,7 @@ export default async function (eleventyConfig) {
 
   // --------------------- custom wtach targets
   eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
-  eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc}');
+  eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc,njk,html,md,js}');
 
   // --------------------- layout aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk');
