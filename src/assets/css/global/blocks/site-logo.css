@@ -1,6 +1,6 @@
 .logo {
-  --gutter: var(--space-xs);
-  padding: var(--space-s) 0;
-  font-size: var(--size-step-0);
+  --gutter: var(--space-m);
+  padding: var(--space-m) 0;
+  font-size: var(--size-step-4);
   text-decoration: none;
 }

@@ -1,9 +1,9 @@
 ---
-title: Privacy Policy
+title: Politique de confidentialité
 discover:
-  title: Privacy Policy
-permalink: /privacy/index.html
-description: I respect the EU General Data Protection Regulation (GDPR). This policy document explains how I collect and handle any information you provide to me.
+  title: Politique de confidentialité
+permalink: /confidentialite/index.html
+description: Politique de confidentialité
 date: "Last Modified"
 layout: page
 ---

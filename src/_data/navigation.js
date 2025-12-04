@@ -1,38 +1,46 @@
 export default {
   top: [
     {
-      text: 'About',
-      url: '/about/'
+      text: 'Moi',
+      url: '/moi/'
     },
     {
-      text: 'Docs',
-      url: '/get-started/'
+      text: 'Photos',
+      url: '/photos/'
     },
     {
-      text: 'Built with',
-      url: '/built-with/'
+      text: 'Créer notre rencontre',
+      url: '/rencontre/'
+    },
+    {
+      text: 'Invitations au plaisir',
+      url: '/invitations/'
+    },
+    {
+      text: 'Souvenirs partagés',
+      url: '/livre-or/'
     },
     {
       text: 'Blog',
       url: '/blog/'
+    },
+    {
+      text: 'Liens',
+      url: '/liens/'
     }
   ],
   bottom: [
     {
-      text: 'Style guide',
-      url: '/styleguide/'
+      text: 'Mentions légales',
+      url: '/mentions-legales/'
     },
     {
-      text: 'Imprint',
-      url: '/imprint/'
+      text: 'Politique de confidentialité',
+      url: '/confidentialité/'
     },
     {
-      text: 'Privacy',
-      url: '/privacy/'
-    },
-    {
-      text: 'Accessibility',
-      url: '/accessibility/'
+      text: 'Accessibilité',
+      url: '/accessibilite/'
     }
   ]
 };
