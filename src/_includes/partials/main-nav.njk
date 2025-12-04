@@ -55,11 +55,12 @@
 
   <template id="burger-template">
     <button data-drawer-toggle class="cluster" type="button" aria-expanded="false" aria-controls="mainnav">
-      {% if aria-expanded %}
+      <span class="menu-icon-close">
         {% svg "misc/xmark", "Close menu icon" %}
-      {% else %}
+      </span>
+      <span class="menu-icon-open">
         {% svg "misc/menu", "Menu icon" %}
-      {% endif %}
+      <span>
     </button>
   </template>
 

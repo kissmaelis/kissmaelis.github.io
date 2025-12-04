@@ -81,6 +81,16 @@
   overflow-y: auto;
 }
 
+.menu-icon-close {
+  display: none;
+}
+.mainnav [data-drawer-toggle][aria-expanded='true'] .menu-icon-close {
+  display: inline;
+}
+.mainnav [data-drawer-toggle][aria-expanded='true'] .menu-icon-open {
+  display: none;
+}
+
 body:has([data-drawer-toggle][aria-expanded='true']) {
   overflow: hidden;
 }
