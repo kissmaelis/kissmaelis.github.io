@@ -1,4 +1,5 @@
-<!-- toggle sub menu in _data/meta.js -->
+<!-- toggle drawer and sub menu in _data/meta.js -->
+{% set drawerNav = meta.navigation.drawerNav %}
 {% set subMenu = meta.navigation.subMenu %}
 
 <nav id="mainnav" class="mainnav" aria-label="{{ meta.navigation.ariaTop }}">
@@ -46,6 +47,30 @@
     {% endfor %}
   </ul>
 </nav>
+
+{% if drawerNav %}
+  <!-- template element holding a button that needs to be injected when JavaScript is finally available. -->
+  <!-- based on solution by Manuel Matuzovic, https://web.dev/website-navigation/ and the Web Accessibility Cookbook -->
+  <!-- see also: https://kittygiraudel.com/2022/09/30/templating-in-html/ -->
+
+  <template id="burger-template">
+    <button data-drawer-toggle class="cluster" type="button" aria-expanded="false" aria-controls="mainnav">
+      {% if aria-expanded %}
+        {% svg "misc/xmark", "Close menu icon" %}
+      {% else %}
+        {% svg "misc/menu", "Menu icon" %}
+      {% endif %}
+    </button>
+  </template>
+
+  {% css "local" %}
+    {% include "css/nav-main-drawer-cls.css" %}
+  {% endcss %}
+
+  {% js "defer" %}
+    {% include "scripts/nav-drawer.js" %}
+  {% endjs %}
+{% endif %}
 
 {% if subMenu %}
   {% js "defer" %}

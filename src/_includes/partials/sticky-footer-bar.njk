@@ -1,42 +1,5 @@
-<!-- toggle drawer in _data/meta.js -->
-{% set drawerNav = meta.navigation.drawerNav %}
-
-<div id="sticky-footer" class="sticky-footer wrapper">
+<div class="sticky-footer-bar wrapper">
   <div class="repel ontop gutter-s">
-    <span>Hello test</span>
-
-    {% if drawerNav %}
-      <!-- template element holding a button that needs to be injected when JavaScript is finally available. -->
-      <!-- based on solution by Manuel Matuzovic, https://web.dev/website-navigation/ and the Web Accessibility Cookbook -->
-      <!-- see also: https://kittygiraudel.com/2022/09/30/templating-in-html/ -->
-
-      <template id="burger-template">
-        <button data-drawer-toggle class="cluster" type="button" aria-expanded="false" aria-controls="mainnav">
-          <span>{{ meta.navigation.navLabel }}</span>
-
-          <svg
-            width="1em"
-            height="1em"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          >
-            <path d="M5 12h14" />
-            <path d="M12 5v14" />
-          </svg>
-        </button>
-      </template>
-
-      {% css "local" %}
-        {% include "css/nav-main-drawer-cls.css" %}
-      {% endcss %}
-
-      {% js "defer" %}
-        {% include "scripts/nav-drawer.js" %}
-      {% endjs %}
-    {% endif %}
+    <span>TESTING</span>
   </div>
-<div>
+</div

@@ -1,11 +1,11 @@
 // © Manuel Matuzović: https://web.dev/website-navigation/ / Web Accessibility Cookbook
 
-const stickyFooter = document.querySelector('#sticky-footer');
-const div = stickyFooter.querySelector('div');
+const nav = document.querySelector('nav');
+const list = nav.querySelector('ul');
 const burgerClone = document.querySelector('#burger-template').content.cloneNode(true);
 const buttonDrawer = burgerClone.querySelector('button[data-drawer-toggle]');
 
-div.style.setProperty('display', 'flex');
+list.style.setProperty('display', 'flex');
 
 buttonDrawer.addEventListener('click', e => {
   const isOpenDrawer = buttonDrawer.getAttribute('aria-expanded') === 'true';
@@ -17,7 +17,7 @@ const disableMenu = () => {
 };
 
 //  close on escape
-stickyFooter.addEventListener('keyup', event => {
+nav.addEventListener('keyup', event => {
   if (event.code === 'Escape') {
     disableMenu();
     buttonDrawer.focus();
@@ -26,7 +26,7 @@ stickyFooter.addEventListener('keyup', event => {
 
 // close if clicked outside of event target
 document.addEventListener('click', event => {
-  const isClickInsideElement = stickyFooter.contains(event.target);
+  const isClickInsideElement = nav.contains(event.target);
   if (!isClickInsideElement) {
     disableMenu();
   }
@@ -35,8 +35,8 @@ document.addEventListener('click', event => {
 // avoid drawer flashing on page load
 document.addEventListener('DOMContentLoaded', function () {
   setTimeout(() => {
-    div.removeAttribute('no-flash');
+    list.removeAttribute('no-flash');
   }, 100);
 });
 
-stickyFooter.insertBefore(burgerClone, div);
+nav.insertBefore(burgerClone, list);
