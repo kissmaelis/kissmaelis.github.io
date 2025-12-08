@@ -1,8 +1,24 @@
-sticky-footer {
+.sticky {
   position: sticky;
   bottom: 0;
   z-index: 998;
+}
+.footer-bar {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border-radius: 12px 12px 0px 0px;
+  border-radius: 12px;
+  width: 100%;
+  padding: var(--space-xs) var(--space-s); 
+  --cluster-vertical-alignment: center;
+  --cluster-horizontal-alignment: center;
+}
+
+.footer-bar svg {
+  width: 1.8rem;
+  height: 1.8rem;
+  color: var(--color-primary);
+}
+
+.footer-bar a:hover svg {
+  color: var(--color-secondary);
 }

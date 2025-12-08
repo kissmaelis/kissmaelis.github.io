@@ -1,5 +1,16 @@
-<div class="sticky-footer-bar wrapper">
-  <div class="repel ontop gutter-s">
-    <span>TESTING</span>
+<div class="wrapper sticky">
+  <div class="repel ontop gutter-m">
+    <div class="footer-bar shadow-md padding-m center-cross space-around">
+      <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
+          {% for key, value in personal.platforms %}
+            {% if value != "" %}
+              <a class="no-indicator" target="_blank" data-icon href="{{ value }}" rel="me">
+                <span class="visually-hidden">{{ key | capitalize }}</span>
+                {% svg 'platform/' + key %}
+              </a>
+            {% endif %}
+          {% endfor %}
+      </nav>
+    </div>
   </div>
 </div
