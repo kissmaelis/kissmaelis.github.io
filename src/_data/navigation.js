@@ -17,10 +17,6 @@ export default {
       url: '/invitations/'
     },
     {
-      text: 'Souvenirs partagés',
-      url: '/livre-or/'
-    },
-    {
       text: 'Blog',
       url: '/blog/'
     },
@@ -36,7 +32,7 @@ export default {
     },
     {
       text: 'Politique de confidentialité',
-      url: '/confidentialité/'
+      url: '/confidentialite/'
     },
     {
       text: 'Accessibilité',

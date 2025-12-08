@@ -28,9 +28,15 @@ export default async function (eleventyConfig) {
     await events.buildAllJs();
   });
 
-  // --------------------- custom wtach targets
+  // --------------------- custom watch targets
   eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
   eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc,njk,html,md,js}');
+
+  // --------------------- WSL Chokidar polling config 
+  eleventyConfig.setChokidarConfig({
+		usePolling: true,
+		interval: 500,
+	});
 
   // --------------------- layout aliases
   eleventyConfig.addLayoutAlias('base', 'base.njk');
