@@ -4,8 +4,8 @@
   "items": [
     {
       "name": "Display",
-      "description": "Display font stack for headings and large text. Redhat Display is made for headlines and big statements, are low contrast and spaced tightly, with a large x-height and open counters.",
-      "value": ["Pacifico", "Redhat", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
+      "description": "Display font stack for headings and large text.",
+      "value": ["Pacifico", "Segoe UI", "Roboto", "Helvetica Neue", "Arial", "sans-serif"]
     },
     {
       "name": "Base",
