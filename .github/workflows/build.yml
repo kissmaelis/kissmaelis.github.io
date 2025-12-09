@@ -13,10 +13,8 @@ jobs:
         uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
-      - run: ls
       - run: npm ci
       - run: npm run build
-      - run: ls
         env:
           DOTENV_KEY: ${{ secrets.DOTENV_PRIVATE_KEY_PRODUCTION }}
       - name: Deploy

@@ -10,6 +10,7 @@
 // register dotenv for process.env.* variables to pickup
 import dotenv from 'dotenv';
 dotenv.config();
+console.log('TESTING DOTENV CONFIG',process.env); // remove this after you've confirmed it is working
 
 // add yaml support
 import yaml from 'js-yaml';
