@@ -14,6 +14,7 @@ jobs:
         with:
           node-version: ${{ matrix.node }}
       - run: npm ci
+      - run: npx dotenv-vault@latest pull production
       - run: npm run build
         env:
           DOTENV_KEY: ${{ secrets.DOTENV_PRIVATE_KEY_PRODUCTION }}
