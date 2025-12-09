@@ -1,0 +1,10 @@
+[org]
+disclosures = [
+    { doc_type='sustainability-page', url='http://localhost:8080/sustainability/', domain='localhost' }
+]
+
+[upstream]
+services = [
+    { domain='github.com', service_type='cdn' }
+]
+
