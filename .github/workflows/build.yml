@@ -1,33 +1,17 @@
-name: Eleventy Build
+name: Eleventy Build and Deploy
 on: [push]
-
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - uses: actions/setup-node@v3
-      with:
-        node-version: 16
-    - run: curl -sfS https://dotenvx.sh/install.sh | sh
-    - run: dotenvx run -- node build.js
-      env:
-        DOTENV_PRIVATE_KEY_CI: ${{ secrets.DOTENV_PRIVATE_KEY_PRODUCTION }}
-
 jobs:
   build_deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
-      - uses: actions/checkout@master
-
+        uses: actions/checkout@master
       - name: Build
         uses: actions/setup-node@v3
         with:
           node-version: 16
       - run: curl -sfS https://dotenvx.sh/install.sh | sh
-      - run: dotenvx run -- node build.js
+      - run: dotenvx npm build
         env:
           DOTENV_PRIVATE_KEY_PRODUCTION: ${{ secrets.DOTENV_PRIVATE_KEY_PRODUCTION }}
       - name: Deploy
