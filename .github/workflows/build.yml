@@ -9,19 +9,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@master
-      - name: Install dependencies
-        uses: actions/setup-node@v6
-        with:
-          node-version: ${{ matrix.node }}
-        run: npm ci
       - name: Build
         uses: actions/setup-node@v6
         with:
           node-version: ${{ matrix.node }}
-      - run: curl -sfS https://dotenvx.sh/install.sh | sh
-      - run: dotenvx npm build
+      - run: ls
+      - run: npm ci
+      - run: npm run build
+      - run: ls
         env:
-          DOTENV_PRIVATE_KEY_PRODUCTION: ${{ secrets.DOTENV_PRIVATE_KEY_PRODUCTION }}
+          DOTENV_KEY: ${{ secrets.DOTENV_PRIVATE_KEY_PRODUCTION }}
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:
