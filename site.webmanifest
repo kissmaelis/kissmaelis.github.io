@@ -1,7 +1,7 @@
 {
   "name": "kissmaelis - Eleventy starter for building modern, resilient websites",
   "short_name": "kissmaelis",
-  "start_url": "http://localhost:8080",
+  "start_url": "https://kissmaelis.com/blog/",
   "icons": [
     {
       "src": "/icon-192x192.png",

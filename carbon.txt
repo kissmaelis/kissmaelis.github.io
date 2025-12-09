@@ -1,6 +1,6 @@
 [org]
 disclosures = [
-    { doc_type='sustainability-page', url='http://localhost:8080/sustainability/', domain='localhost' }
+    { doc_type='sustainability-page', url='https://kissmaelis.com/blog//sustainability/', domain='kissmaelis.com' }
 ]
 
 [upstream]
