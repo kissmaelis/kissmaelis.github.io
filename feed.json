@@ -2,7 +2,7 @@
   "version": "https://jsonfeed.org/version/1.1",
   "title": "Mon Blog",
   "language": "fr",
-  "home_page_url": "https://kissmaelis.com/blog/",
+  "home_page_url": "https://kissmaelis.com/blog",
   "feed_url": "https://kissmaelis.com/feed.json",
   "description": "Tell the word what you are writing about in your blog. It will show up on feed readers.",
   "authors": [

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr" xml:base="https://kissmaelis.com/blog//">
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="fr" xml:base="https://kissmaelis.com/blog/">
   <title>Mon Blog</title>
   <subtitle>Tell the word what you are writing about in your blog. It will show up on feed readers.</subtitle>
   <link href="https://kissmaelis.com/feed.xml" rel="self" />
-  <link href="https://kissmaelis.com/blog/" />
-  <updated>2025-12-09T21:19:32Z</updated>
-  <id>https://kissmaelis.com/blog/</id>
+  <link href="https://kissmaelis.com/blog" />
+  <updated>2025-12-09T21:23:26Z</updated>
+  <id>https://kissmaelis.com/blog</id>
   <author>
     <name>Maelis Gast</name>
   </author>
