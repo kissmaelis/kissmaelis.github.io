@@ -9,7 +9,7 @@ export const lang = 'fr';
 export const skipContent = 'Skip to content';
 export const author = {
   name: 'Maelis Gast',
-  avatar: '/icon-512x512.png', // path to the author's avatar. In this case just using a favicon.
+  avatar: 'https://files.kinkycats.org/accounts/avatars/114/555/602/345/106/395/original/5d61f06770d8c2a3.png', // path to the author's avatar. In this case just using a favicon.
   email: 'contact@kissmaelis.com',
   website: 'https://kissmaelis.com', 
   fediverse: '@kissmaelis@kinkycats.org' // used for highlighting journalism on the fediverse. Can be Mastodon, Flipboard, Threads, WordPress (with the ActivityPub plugin installed), PeerTube, Pixelfed, etc. https://blog.joinmastodon.org/2024/07/highlighting-journalism-on-mastodon/
@@ -101,4 +101,4 @@ export const viewRepo = {
   allow: true,
   infoText: 'View this page on GitHub'
 };
-export const easteregg = true;
+export const easteregg = false;
