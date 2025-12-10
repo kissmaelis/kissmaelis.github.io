@@ -1,5 +1,5 @@
 // Eleventy
-import {EleventyRenderPlugin} from '@11ty/eleventy';
+import {EleventyRenderPlugin, I18nPlugin} from '@11ty/eleventy';
 import rss from '@11ty/eleventy-plugin-rss';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import webc from '@11ty/eleventy-plugin-webc';
@@ -20,5 +20,6 @@ export default {
   eleventyImageTransformPlugin,
   markdownLib,
   drafts,
-  htmlConfig
+  htmlConfig,
+  I18nPlugin
 };

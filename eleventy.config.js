@@ -50,6 +50,9 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('tagList', tagList);
 
   // ---------------------  Plugins
+  eleventyConfig.addPlugin(plugins.I18nPlugin, {
+    defaultLanguage: "fr",
+  });
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.drafts);
 

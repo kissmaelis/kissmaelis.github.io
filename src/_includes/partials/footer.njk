@@ -2,7 +2,7 @@
   <div class="wrapper">
     <div class="cluster gutter-xs">
       <nav class="cluster text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
-        {% for item in navigation.bottom %}
+        {% for item in navigation[page.lang].bottom %}
           <a
             href="{{ item.url }}"
             {{
@@ -18,6 +18,18 @@
     </div>
 
     {% include 'partials/theme-switch.njk' %}
+
+    <nav>
+      <a href="{{ page.url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
+        {{ page.lang | upper }}
+      </a>
+
+      {% for link in page.url | locale_links %}
+      <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
+        {{ link.lang | upper }}</a
+      >
+      {% endfor %}
+    </nav>
 
     <aside class="creator | cluster gutter-2xs text-step-min-1 mt-xl">
       Made with <span class="visually-hidden">love</span> <span>{% svg "misc/heart" %}</span> and
