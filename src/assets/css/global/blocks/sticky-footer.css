@@ -6,9 +6,10 @@
 .footer-bar {
   backdrop-filter: blur(16px) saturate(180%);
   -webkit-backdrop-filter: blur(16px) saturate(180%);
-  border-radius: 12px;
+  border-radius: var(--border-radius-small);
   width: 100%;
   padding: var(--space-xs) var(--space-s); 
+  margin-bottom: var(--space-s);
   --cluster-vertical-alignment: center;
   --cluster-horizontal-alignment: center;
 }
