@@ -3,24 +3,50 @@
   "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print. neutral and vibrant colors are converted to color palettes, fixed colors are kept as they are",
   "shades_neutral": [
     {
-      "name": "Gray",
-      "value": "#888888"
+      "name": "Charcoal",
+      "value": "#1A1A1F"
     }
   ],
-  "shades_vibrant": [],
+  "shades_vibrant": [
+  ],
   "light_dark": [
     {
-      "name": "Pink",
-      "value": "#dd4462"
+      "name": "Primary",
+      "value": "#F50CA0"
     },
     {
-      "name": "Blue",
-      "value": "#4467dd"
-    },
-    {
-      "name": "Gold",
-      "value": "#fbbe25"
+      "name": "Secondary",
+      "value": "#FFACEC"
     }
   ],
-  "standalone": []
+  "standalone": [
+        {
+      "name": "Purple",
+      "value": "#A60DFD"
+    },
+    {
+      "name": "Coral",
+      "value": "#FF5F9E"
+    },
+    {
+      "name": "Mint",
+      "value": "#2EF2D0"
+    },
+        {
+      "name": "Primary Dark",
+      "value": "#C0097E"
+    },
+    {
+      "name": "Primary Light",
+      "value": "#FF7CCE"
+    },
+    {
+      "name": "Secondary Dark",
+      "value": "#E78ABF"
+    },
+    {
+      "name": "Secondary Light",
+      "value": "#FFE1F6"
+    }
+  ]
 }

@@ -33,10 +33,6 @@ export default {
     {
       text: 'Politique de confidentialité',
       url: '/confidentialite/'
-    },
-    {
-      text: 'Accessibilité',
-      url: '/accessibilite/'
     }
   ]
 };

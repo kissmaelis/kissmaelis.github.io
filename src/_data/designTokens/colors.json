@@ -3,64 +3,84 @@
   "description": "Hex color codes that can be shared, cross-platform. They can be converted at point of usage, such as HSL for web or CMYK for print. neutral and vibrant colors are converted to color palettes, fixed colors are kept as they are",
   "items": [
     {
-      "name": "Gray 100",
-      "value": "#f8f8f8"
+      "name": "Charcoal 100",
+      "value": "#f8f8f9"
     },
     {
-      "name": "Gray 200",
-      "value": "#e4e4e4"
+      "name": "Charcoal 200",
+      "value": "#e4e4e5"
     },
     {
-      "name": "Gray 300",
-      "value": "#aeaeae"
+      "name": "Charcoal 300",
+      "value": "#aeaeaf"
     },
     {
-      "name": "Gray 400",
-      "value": "#808080"
+      "name": "Charcoal 400",
+      "value": "#808082"
     },
     {
-      "name": "Gray 500",
-      "value": "#636363"
+      "name": "Charcoal 500",
+      "value": "#636365"
     },
     {
-      "name": "Gray 600",
-      "value": "#484848"
+      "name": "Charcoal 600",
+      "value": "#474749"
     },
     {
-      "name": "Gray 700",
-      "value": "#3a3a3a"
+      "name": "Charcoal 700",
+      "value": "#3a3a3c"
     },
     {
-      "name": "Gray 800",
-      "value": "#2e2e2e"
+      "name": "Charcoal 800",
+      "value": "#2e2e2f"
     },
     {
-      "name": "Gray 900",
-      "value": "#161616"
+      "name": "Charcoal 900",
+      "value": "#161617"
     },
     {
-      "name": "Pink",
-      "value": "#dd4462"
+      "name": "Primary",
+      "value": "#F50CA0"
     },
     {
-      "name": "Pink Subdued",
-      "value": "#ce5769"
+      "name": "Primary Subdued",
+      "value": "#e3459c"
     },
     {
-      "name": "Blue",
-      "value": "#4467dd"
+      "name": "Secondary",
+      "value": "#FFACEC"
     },
     {
-      "name": "Blue Subdued",
-      "value": "#4d6cc8"
+      "name": "Secondary Subdued",
+      "value": "#f6b3e6"
     },
     {
-      "name": "Gold",
-      "value": "#fbbe25"
+      "name": "Purple",
+      "value": "#A60DFD"
     },
     {
-      "name": "Gold Subdued",
-      "value": "#f1c15b"
+      "name": "Coral",
+      "value": "#FF5F9E"
+    },
+    {
+      "name": "Mint",
+      "value": "#2EF2D0"
+    },
+    {
+      "name": "Primary Dark",
+      "value": "#C0097E"
+    },
+    {
+      "name": "Primary Light",
+      "value": "#FF7CCE"
+    },
+    {
+      "name": "Secondary Dark",
+      "value": "#E78ABF"
+    },
+    {
+      "name": "Secondary Light",
+      "value": "#FFE1F6"
     }
   ]
 }
