@@ -8,262 +8,8 @@
       
 
       <url>
-        <loc>https://kissmaelis.com/blog/blog/post-with-fetched-content/</loc>
-        <lastmod>2022-08-28T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/post-with-301-redirects/</loc>
-        <lastmod>2022-08-28T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/post-with-some-code/</loc>
-        <lastmod>2022-09-01T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/post-with-a-video/</loc>
-        <lastmod>2022-10-31T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/post-with-all-the-markdown/</loc>
-        <lastmod>2022-11-02T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/open-graph-images/</loc>
-        <lastmod>2023-01-25T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/demo-pages/</loc>
-        <lastmod>2023-10-30T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/what-is-tailwind-css-doing-here/</loc>
-        <lastmod>2023-11-30T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/post-with-a-gallery/</loc>
-        <lastmod>2024-01-30T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/eleventy-excellent-20/</loc>
-        <lastmod>2024-02-01T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/eleventy-excellent-30/</loc>
-        <lastmod>2024-06-03T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/post-with-an-image/</loc>
-        <lastmod>2025-01-09T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/eleventy-excellent-40/</loc>
-        <lastmod>2025-01-11T00:00:00.000Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/tags/feature/</loc>
-        <lastmod>2025-12-09T21:22:21.839Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
         <loc>https://kissmaelis.com/blog/tags/</loc>
-        <lastmod>2025-12-09T21:22:21.839Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/accessibilite/</loc>
-        <lastmod>2025-12-09T21:22:21.840Z</lastmod>
-        <changefreq>monthly</changefreq>
-    </url>
-    
-  
-    
-
-      
-        
-      
-
-      <url>
-        <loc>https://kissmaelis.com/blog/blog/</loc>
-        <lastmod>2025-12-09T21:22:21.840Z</lastmod>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -276,7 +22,7 @@
 
       <url>
         <loc>https://kissmaelis.com/blog/confidentialite/</loc>
-        <lastmod>2025-12-09T21:22:21.840Z</lastmod>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -289,7 +35,20 @@
 
       <url>
         <loc>https://kissmaelis.com/blog/</loc>
-        <lastmod>2025-12-09T21:22:21.840Z</lastmod>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>https://kissmaelis.com/blog/invitations/</loc>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -302,7 +61,7 @@
 
       <url>
         <loc>https://kissmaelis.com/blog/liens/</loc>
-        <lastmod>2025-12-09T21:22:21.840Z</lastmod>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -315,7 +74,7 @@
 
       <url>
         <loc>https://kissmaelis.com/blog/mentions-legales/</loc>
-        <lastmod>2025-12-09T21:22:21.840Z</lastmod>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -328,7 +87,20 @@
 
       <url>
         <loc>https://kissmaelis.com/blog/moi/</loc>
-        <lastmod>2025-12-09T21:22:21.840Z</lastmod>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
+        <changefreq>monthly</changefreq>
+    </url>
+    
+  
+    
+
+      
+        
+      
+
+      <url>
+        <loc>https://kissmaelis.com/blog/photos/</loc>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
@@ -341,7 +113,7 @@
 
       <url>
         <loc>https://kissmaelis.com/blog/rencontre/</loc>
-        <lastmod>2025-12-09T21:22:21.840Z</lastmod>
+        <lastmod>2025-12-10T00:53:54.079Z</lastmod>
         <changefreq>monthly</changefreq>
     </url>
     
