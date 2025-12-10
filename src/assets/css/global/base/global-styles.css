@@ -32,16 +32,16 @@ h2,
 h3 {
   font-family: var(--font-display);
   font-weight: var(--font-extra-bold);
-  line-height: var(--leading-fine);
+  line-height: var(--leading-loose);
   letter-spacing: var(--tracking-s);
 }
 
 h1 {
-  font-size: var(--size-step-6);
+  font-size: var(--size-step-4);
 }
 
 h2 {
-  font-size: var(--size-step-4);
+  font-size: var(--size-step-3);
 }
 
 h3 {

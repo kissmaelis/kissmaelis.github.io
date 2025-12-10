@@ -19,7 +19,7 @@ form > * + * {
 }
 
 label {
-  line-height: var(--leading-fine);
+  line-height: var(--leading-loose);
   font-weight: var(--font-bold);
 }
 
