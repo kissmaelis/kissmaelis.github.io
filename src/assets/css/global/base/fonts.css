@@ -1,40 +1,39 @@
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
-  font-style: normal;
-  font-display: swap;
-  font-weight: 400;
-  src:
-    local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-regular.woff2') format('woff2');
-}
-
-@font-face {
-  font-family: 'Atkinson Hyperlegible';
+  font-family: 'Inter';
   font-style: italic;
   font-display: swap;
   font-weight: 400;
   src:
     local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-italic.woff2') format('woff2');
+    url('/assets/fonts/inter/Inter_18pt-Italic.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Atkinson Hyperlegible';
+  font-family: 'Inter';
   font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src:
+    local(''),
+    url('/assets/fonts/inter/Inter_18pt-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Inter';
+  font-style: bold;
   font-display: swap;
   font-weight: 700;
   src:
     local(''),
-    url('/assets/fonts/atkinson/atkinson-hyperlegible-bold.woff2') format('woff2');
+    url('/assets/fonts/inter/Inter_18pt-Bold.woff2') format('woff2');
 }
 
 @font-face {
-  font-family: 'Pacifico';
-  font-style: normal;
+  font-family: 'Nunito';
+  font-style: bold;
   font-display: swap;
   font-weight: 900;
   src:
     local(''),
-    url('/assets/fonts/pacifico/Pacifico.woff2') format('woff2');
+    url('/assets/fonts/nunito/Nunito-SemiBold.woff2') format('woff2');
 }
-

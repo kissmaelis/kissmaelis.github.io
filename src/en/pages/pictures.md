@@ -1,6 +1,6 @@
 ---
 title: Maelis Gast - kissmaelis
-permalink: /pictures/index.html
+permalink: /en/pictures/index.html
 description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
 layout: page
 gallery:

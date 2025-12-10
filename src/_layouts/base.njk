@@ -20,6 +20,23 @@
 
     <base href="{{ page.url }}" />
 
+    <!-- alternate languages  -->
+    <link rel="alternate" hreflang="{{ page.lang }}" href="{{ meta.url }}{{ page.url }}" />
+
+    {% for link in page.url | locale_links %}
+    <link
+      rel="alternate"
+      hreflang="{{ link.lang }}"
+      href="{{ meta.url }}{{ link.url }}"
+    />
+    {% endfor %}
+
+    <link
+      rel="alternate"
+      hreflang="x-default"
+      href="{{ meta.url }}{{ page.url | locale_url('fr') }}"
+    />
+
     <!-- 3 synchronous js  -->
     {% include "head/js-inline.njk" %}
 

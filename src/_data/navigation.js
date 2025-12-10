@@ -18,10 +18,6 @@ export default {
         url: '/invitations/'
       },
       {
-        text: 'Blog',
-        url: '/blog/'
-      },
-      {
         text: 'Liens',
         url: '/liens/'
       }
@@ -40,38 +36,34 @@ export default {
   en: {
     top: [
       {
-        text: 'Moi',
-        url: '/moi/'
+        text: 'Me',
+        url: '/en/me/'
       },
       {
-        text: 'Photos',
-        url: '/photos/'
+        text: 'Pictures',
+        url: '/en/pictures/'
       },
       {
-        text: 'Créer notre rencontre',
-        url: '/rencontre/'
+        text: 'Design our meeting',
+        url: '/en/meet/'
       },
       {
-        text: 'Invitations au plaisir',
-        url: '/invitations/'
+        text: 'Delight invitations',
+        url: '/en/invitations/'
       },
       {
-        text: 'Blog',
-        url: '/blog/'
-      },
-      {
-        text: 'Liens',
-        url: '/liens/'
+        text: 'Links',
+        url: '/en/links/'
       }
     ],
     bottom: [
       {
-        text: 'Mentions légales',
-        url: '/mentions-legales/'
+        text: 'Legal notice',
+        url: '/en/legal/'
       },
       {
-        text: 'Politique de confidentialité',
-        url: '/confidentialite/'
+        text: 'Confidentiality policy',
+        url: '/en/confidentiality/'
       }
     ]
   }

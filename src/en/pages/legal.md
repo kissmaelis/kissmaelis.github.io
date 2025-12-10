@@ -2,7 +2,7 @@
 title: Mentions Légales
 discover:
   title: Mentions Légales
-permalink: /legal/index.html
+permalink: /en/legal/index.html
 description: Mentions Légales
 layout: page
 ---

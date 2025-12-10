@@ -52,6 +52,7 @@ export default async function (eleventyConfig) {
   // ---------------------  Plugins
   eleventyConfig.addPlugin(plugins.I18nPlugin, {
     defaultLanguage: "fr",
+    errorMode: 'allow-fallback'
   });
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.drafts);

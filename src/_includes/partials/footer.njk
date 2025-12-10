@@ -18,24 +18,13 @@
     </div>
 
     {% include 'partials/theme-switch.njk' %}
+    {% include 'partials/language-switch.njk' %}
 
-    <nav>
-      <a href="{{ page.url }}" lang="{{ page.lang }}" hreflang="{{ page.lang }}">
-        {{ page.lang | upper }}
-      </a>
-
-      {% for link in page.url | locale_links %}
-      <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">
-        {{ link.lang | upper }}</a
-      >
-      {% endfor %}
-    </nav>
-
-    <aside class="creator | cluster gutter-2xs text-step-min-1 mt-xl">
+    <aside class="creator | cluster gutter-2xs text-step-min-1">
       Made with <span class="visually-hidden">love</span> <span>{% svg "misc/heart" %}</span> and
       <a class="no-indicator" href="https://www.11ty.dev/">
         <span class="visually-hidden">Eleventy</span>
-        {% svg "misc/11ty" %}
+        {% svg "misc/11ty" %} 
       </a>
       by {{ meta.creator.name }}
     </aside>
