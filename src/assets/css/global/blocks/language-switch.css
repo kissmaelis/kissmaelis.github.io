@@ -1,0 +1,53 @@
+#lang-select-container {
+  width: 50px;
+  height: 40px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: height 0.2s ease-in-out, border-radius 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+#lang-select-container:hover {
+  height: 90px; /* Can't use height: auto & transition effect */
+  border-radius: 20px;
+  box-shadow: 0px 7px 10px rgba(79, 104, 113, 0.30);
+}
+#lang-select-container ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+#lang-select-container:hover ul {
+  position: relative;
+}
+
+#lang-select-container:hover ul li {
+  opacity: 1;
+  transition: opacity 0.2s ease-in-out;
+}
+
+#lang-select-container:hover ul li:first-child img {
+  cursor: default;
+}
+
+#lang-select-container:hover ul li img {
+  width: 25px;
+  height: 25px;
+        
+  display: block;
+  left: 50%;
+  transform: translate(-103%, -40%);
+  margin-bottom: 8px;
+    
+  border-radius: 50%;
+  border: 2px solid #FFFFFF;
+  box-shadow: 0px 0px 6px rgba(79, 104, 113, 0.30);
+        
+  cursor: pointer;
+  transition: all 0.1s ease-in-out;
+}
+
+#lang-select-container:hover ul li img:hover {
+  box-shadow: 0px 5px 10px rgba(79, 104, 113, 0.30);
+  transform: translate(-103%, -40%) scale(1.08);
+}
