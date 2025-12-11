@@ -3,33 +3,33 @@ export default {
     top: [
       {
         text: 'Moi',
-        url: '/moi/'
+        url: '/fr/moi/'
       },
       {
         text: 'Photos',
-        url: '/photos/'
+        url: '/fr/photos/'
       },
       {
         text: 'Créer notre rencontre',
-        url: '/rencontre/'
+        url: '/fr/rencontre/'
       },
       {
         text: 'Invitations au plaisir',
-        url: '/invitations/'
+        url: '/fr/invitations/'
       },
       {
         text: 'Liens',
-        url: '/liens/'
+        url: '/fr/liens/'
       }
     ],
     bottom: [
       {
         text: 'Mentions légales',
-        url: '/mentions-legales/'
+        url: '/fr/mentions-legales/'
       },
       {
         text: 'Politique de confidentialité',
-        url: '/confidentialite/'
+        url: '/fr/confidentialite/'
       }
     ]
   },
@@ -49,7 +49,7 @@ export default {
       },
       {
         text: 'Delight invitations',
-        url: '/en/invitations/'
+        url: '/en/delight-invitations/'
       },
       {
         text: 'Links',

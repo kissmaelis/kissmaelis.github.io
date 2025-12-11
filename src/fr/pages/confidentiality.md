@@ -2,7 +2,7 @@
 title: Politique de confidentialité
 discover:
   title: Politique de confidentialité
-permalink: /confidentialite/index.html
+permalink: /fr/confidentialite/index.html
 description: Politique de confidentialité
 date: "Last Modified"
 layout: page

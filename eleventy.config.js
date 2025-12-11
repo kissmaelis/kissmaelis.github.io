@@ -21,6 +21,10 @@ import filters from './src/_config/filters.js';
 import plugins from './src/_config/plugins.js';
 import shortcodes from './src/_config/shortcodes.js';
 
+// config translations files
+import en from './src/_data/languages/en.json' with { type: "json" };
+import fr from './src/_data/languages/fr.json' with { type: "json" };;
+
 export default async function (eleventyConfig) {
   // --------------------- Events: before build
   eleventyConfig.on('eleventy.before', async () => {
@@ -50,10 +54,16 @@ export default async function (eleventyConfig) {
   eleventyConfig.addCollection('tagList', tagList);
 
   // ---------------------  Plugins
-  eleventyConfig.addPlugin(plugins.I18nPlugin, {
+  eleventyConfig.addPlugin(plugins.EleventyI18nPlugin, {
     defaultLanguage: "fr",
     errorMode: 'allow-fallback'
   });
+  eleventyConfig.addPlugin(plugins.i18nPlugin, {
+    translations: { en, fr },
+    fallbackLanguageTag: 'fr',
+    keySeparator: '.'
+  });
+
   eleventyConfig.addPlugin(plugins.htmlConfig);
   eleventyConfig.addPlugin(plugins.drafts);
 

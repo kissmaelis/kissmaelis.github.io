@@ -1,9 +1,10 @@
 // Eleventy
-import {EleventyRenderPlugin, I18nPlugin} from '@11ty/eleventy';
+import {EleventyRenderPlugin, EleventyI18nPlugin} from '@11ty/eleventy';
 import rss from '@11ty/eleventy-plugin-rss';
 import syntaxHighlight from '@11ty/eleventy-plugin-syntaxhighlight';
 import webc from '@11ty/eleventy-plugin-webc';
 import {eleventyImageTransformPlugin} from '@11ty/eleventy-img';
+import i18nPlugin from "eleventy-i18n";
 
 // custom
 import {markdownLib} from './plugins/markdown.js';
@@ -21,5 +22,6 @@ export default {
   markdownLib,
   drafts,
   htmlConfig,
-  I18nPlugin
+  EleventyI18nPlugin,
+  i18nPlugin
 };

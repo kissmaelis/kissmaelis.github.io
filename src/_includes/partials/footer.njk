@@ -21,12 +21,12 @@
     {% include 'partials/language-switch.njk' %}
 
     <aside class="creator | cluster gutter-2xs text-step-min-1">
-      Made with <span class="visually-hidden">love</span> <span>{% svg "misc/heart" %}</span> and
+      {{ 'footer.made_with' | t}} <span class="visually-hidden">{{ 'footer.love' | t}}</span> <span>{% svg "misc/heart" %}</span> {{ 'footer.and' | t}}
       <a class="no-indicator" href="https://www.11ty.dev/">
         <span class="visually-hidden">Eleventy</span>
         {% svg "misc/11ty" %} 
       </a>
-      by {{ meta.creator.name }}
+      {{ 'footer.by' | t}} {{ meta.creator.name }}
     </aside>
   </div>
 

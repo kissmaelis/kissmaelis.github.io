@@ -1,9 +1,9 @@
 ---
-title: Sustainability
+title: Durabilité
 layout: page
 eleventyExcludeFromCollections: true
 excludeFromSitemap: true
-permalink: /sustainability/index.html
+permalink: /fr/durabilite/index.html
 ---
 
 **Carbon Footprint**: This Website has a [todo] Carbon Rating. [View full analysis on websitecarbon.com](https://www.websitecarbon.com/website/kissmaelis-com)
