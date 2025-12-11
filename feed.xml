@@ -4,16 +4,16 @@
   <subtitle>Tell the word what you are writing about in your blog. It will show up on feed readers.</subtitle>
   <link href="https://kissmaelis.com/feed.xml" rel="self" />
   <link href="https://kissmaelis.com/blog" />
-  <updated>2025-12-10T19:22:01Z</updated>
+  <updated>2025-12-11T20:28:24Z</updated>
   <id>https://kissmaelis.com/blog</id>
   <author>
     <name>Maelis Gast</name>
   </author>
 	<entry>
       <title>Post with a gallery</title>
-      <link href="https://kissmaelis.com/blog/post-with-a-gallery/" />
+      <link href="https://kissmaelis.com/fr/blog/post-with-a-gallery/" />
       <updated>2024-01-30T00:00:00Z</updated>
-      <id>https://kissmaelis.com/blog/post-with-a-gallery/</id>
+      <id>https://kissmaelis.com/fr/blog/post-with-a-gallery/</id>
       <content type="html">
 				&lt;p&gt;todo&lt;/p&gt;
  			</content>
