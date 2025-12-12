@@ -2,16 +2,17 @@
   ><div
     role="region"
     class="theme-switch | cluster mt-xs"
-    style="--cluster-horizontal-alignment: center; --gutter: 0.5rem"
+    style="--cluster-horizontal-alignment: center; --gutter: 0.5rem; color: var(--color-text-secondary);"
     aria-labelledby="theme-switcher-label"
     data-theme-switcher
   >
-    <h2 id="theme-switcher-label">{{ meta.themeSwitch.title }}</h2>
+    <span class="visually-hidden">{{ 'theme.title' | t }}</span>
+    <span>{% svg "misc/lightbulb", "", "", "color: var(--color-text);" %}</span>
     <button class="button" id="light-theme-toggle" data-theme="light" data-ghost-button data-small-button>
-      <span>{{ meta.themeSwitch.light }}</span>
+      <span>{{ 'theme.light' | t }}</span>
     </button>
     <button class="button" id="dark-theme-toggle" data-theme="dark" data-ghost-button data-small-button>
-      <span>{{ meta.themeSwitch.dark }}</span>
+      <span>{{ 'theme.dark' | t }}</span>
     </button>
   </div>
 </is-land>

@@ -1,9 +1,15 @@
 {
+  "language": "Langue",
   "hello": "Bonjour !",
   "footer": {
     "made_with": "Fait avec",
     "love": "love",
     "and": "et",
     "by": "par"
+  },
+  "theme": {
+    "title": "Thème",
+    "light": "clair",
+    "dark": "sombre"
   }
 }

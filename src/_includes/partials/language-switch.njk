@@ -1,24 +1,15 @@
+
+
 <nav 
   class="cluster mt-xs"
   style="--cluster-horizontal-alignment: center; --gutter: 0.5rem">
-  {{ languages[page.lang].availableText }}
 
-  {% for link in page.url | locale_links %} {%-if not loop.first %}/{% endif %}
-  <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}"
-    >{{ link.label }}</a
-  >
+  <span class="visually-hidden">{{ 'language' | t}}</span>
+  {% svg "misc/language", "", "", "color: var(--color-text);" %}
+  <strong>{{ page.lang | langName }}</strong>
+
+  {% for link in page.url | locale_links %}
+    <span>•</span>
+    <a href="{{ link.url }}" lang="{{ link.lang }}" hreflang="{{ link.lang }}">{{ link.label }}</a>
   {% endfor %}
-
-  {{ 'hello' | t }}
 </nav>
-
-<div id="lang-select-container">
-  <ul>
-    <li lang-selection="FR" tooltip="FR" flow="up">
-      <img src="https://cdn.countryflags.com/thumbs/france/flag-800.png" alt='france flag'>
-    </li>
-    <li lang-selection="EN" tooltip="EN" flow="up">
-      <img src="https://cdn.countryflags.com/thumbs/united-states-of-america/flag-800.png" alt="usa flag">
-    </li>
-  </ul>
-</div>

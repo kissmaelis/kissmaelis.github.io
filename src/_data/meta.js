@@ -73,11 +73,6 @@ export const navigation = {
   drawerNav: true,
   subMenu: false
 };
-export const themeSwitch = {
-  title: 'Theme',
-  light: 'light',
-  dark: 'dark'
-};
 export const greenweb = {
   // https://carbontxt.org/
   disclosures: [
