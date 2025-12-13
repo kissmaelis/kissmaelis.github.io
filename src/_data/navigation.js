@@ -2,11 +2,11 @@ export default {
   fr: {
     top: [
       {
-        text: 'Moi',
-        url: '/fr/moi/'
+        text: 'Maelis',
+        url: '/fr/maelis/'
       },
       {
-        text: 'Photos',
+        text: 'Mes photos',
         url: '/fr/photos/'
       },
       {
@@ -18,11 +18,19 @@ export default {
         url: '/fr/invitations/'
       },
       {
-        text: 'Liens',
+        text: 'Mes liens',
         url: '/fr/liens/'
       }
     ],
     bottom: [
+      {
+        text: 'Agenda',
+        url: '/fr/agenda/'
+      },
+      {
+        text: 'FAQ',
+        url: '/fr/faq/'
+      },
       {
         text: 'Mentions légales',
         url: '/fr/mentions-legales/'
@@ -30,17 +38,21 @@ export default {
       {
         text: 'Politique de confidentialité',
         url: '/fr/confidentialite/'
+      },
+      {
+        text: 'Durabilité',
+        url: '/fr/durabilite/'
       }
     ]
   },
   en: {
     top: [
       {
-        text: 'Me',
-        url: '/en/me/'
+        text: 'Maelis',
+        url: '/en/maelis/'
       },
       {
-        text: 'Pictures',
+        text: 'My pictures',
         url: '/en/pictures/'
       },
       {
@@ -52,11 +64,19 @@ export default {
         url: '/en/delight-invitations/'
       },
       {
-        text: 'Links',
+        text: 'My links',
         url: '/en/links/'
       }
     ],
     bottom: [
+      {
+        text: 'Agenda',
+        url: '/en/agenda/'
+      },
+      {
+        text: 'FAQ',
+        url: '/en/faq/'
+      },
       {
         text: 'Legal notice',
         url: '/en/legal/'
@@ -64,7 +84,11 @@ export default {
       {
         text: 'Confidentiality policy',
         url: '/en/confidentiality/'
-      }
+      },
+      {
+        text: 'Sustainability',
+        url: '/en/confidentiality/'
+      },
     ]
   }
 };

@@ -2,6 +2,7 @@
   <div class="gallery | grid mt-l-xl gutter-xs" role="list">
     {%- for item in gallery -%}
       <dialog class="flow modal{{ loop.index }}">
+        {%- image item.image, item.alt, item.caption -%}
         <div class="cluster justify-center flow-space-m gutter-s">
           <button data-nav="prev" class="button text-step-1" data-button-variant="primary">
             <span class="visually-hidden">{{ meta.dialog.previous }}</span>{% svg "misc/arrow-left" %}
@@ -13,7 +14,6 @@
             <span class="visually-hidden">{{ meta.dialog.next }}</span>{% svg "misc/arrow-right" %}
           </button>
         </div>
-        {%- image item.image, item.alt, item.caption -%}
       </dialog>
       <button data-index="{{ loop.index }}">{%- image item.image, item.alt -%}</button>
     {%- endfor -%}

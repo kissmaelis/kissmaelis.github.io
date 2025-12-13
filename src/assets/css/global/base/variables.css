@@ -35,10 +35,9 @@
 :root[data-theme='light'] {
   --color-text: var(--color-charcoal-800);
   --color-bg: var(--color-charcoal-100);
-
   --color-tertiary: var(--color-coral);
 
-  --color-text-accent: var(--color-charcoal-700);
+  --color-text-accent: var(--color-secondary);
   --color-bg-accent: var(--color-charcoal-200);
   --color-bg-accent-2: var(--color-charcoal-300);
 }

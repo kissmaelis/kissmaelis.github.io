@@ -1,41 +1,31 @@
 ---
-title: Politique de confidentialité
+title: Privacy Policy
 discover:
-  title: Politique de confidentialité
+  title: Privacy Policy
 permalink: /en/confidentiality/index.html
 
-description: Politique de confidentialité
+description: Privacy Policy
 date: "Last Modified"
 layout: page
 ---
 
-Edit your details in `_data/personal.yaml`
+## Data Controller
+The data controller is the website owner, reachable at {{ personal.email }}
 
-I respect the EU General Data Protection Regulation (GDPR) and this policy document explains how I collect and handle any information you provide to me.
+## Data Collected
+The only data collected are those voluntarily provided through the contact form.
 
-**What background data is collected?**
-This site does not use any third party tracking scripts.
+## Purpose
+This information is used solely to respond to inquiries and is never shared with third parties.
 
-**How do I use the data you provide?**
-This website does not collect any data.
+## Data retention
+Messages may be retained for up to 12 months for follow-up purposes.
 
-**How secure is your data?**
-Very secure, as this website does not collect any information.
+## Your Rights
+Under the GDPR, you may request access to, correction of, or deletion of your data by writing to {{ personal.email }}
 
-**How secure is this website?**
-This website transmits itself using HTTPS, encrypting all data between the browser and the server. Your network provider can still see that you are downloading assets from this site, but not its content. This also protects you from third parties intercepting data, for example, while browsing on public WiFi, or from network providers injecting advertisements on this site. All relevant response HTTP headers are set for your protection and the Content Security Policy is adjusted to this websites requirements.
-
-**Data controller**
-
-{{ personal.address }}
-
-If you have any questions or doubts, please contact me: {{ personal.email }}.
-
-**Changes to the policy**
-If I change the content of this policy, those changes will be effective at the time I post them here.
-
-**Complaints**
-If you have any reason to complain about the way I handle your privacy, please contact me by email: {{ personal.email }}.
+## Cookies
+This website does not use cookies for tracking, advertising, or analytics.
 
 ---
 
