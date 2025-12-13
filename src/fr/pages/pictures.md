@@ -1,7 +1,7 @@
 ---
-title: Maelis Gast - kissmaelis
+title: Mes photos
 permalink: /fr/photos/index.html
-description: 'Eleventy Excellent is inspired bythe companion website of Andy Bell’s talk "Be the browser’s mentor, not its micromanager".'
+description: 'todo'
 layout: page
 gallery:
   - image: ./src/assets/images/gallery/asturias-1.jpg

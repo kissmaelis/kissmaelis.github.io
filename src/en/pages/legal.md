@@ -1,9 +1,9 @@
 ---
-title: Mentions Légales
+title: Legal Notice
 discover:
-  title: Mentions Légales
+  title: Legal Notice
 permalink: /en/legal/index.html
-description: Mentions Légales
+description: Legal Notice
 layout: page
 ---
 
