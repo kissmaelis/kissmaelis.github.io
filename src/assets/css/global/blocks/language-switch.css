@@ -1,0 +1,8 @@
+.language-switch{display:inline-flex;align-items:center;gap:.5rem}
+.language-switch svg{width:1.25rem;height:1.25rem;fill:currentColor;color:var(--color-text);display:block}
+.language-switch .language-current{color:var(--color-primary);font-weight:600}
+.language-switch .language-current svg{display: inline;color:var(--color-primary)}
+.language-switch span{color:var(--color-muted)}
+@media (prefers-color-scheme:dark){
+  .language-switch svg{color:var(--color-text)}
+}

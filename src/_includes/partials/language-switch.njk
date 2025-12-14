@@ -1,12 +1,10 @@
 
 
-<nav 
-  class="cluster mt-xs"
+<nav
+  class="cluster mt-xs language-switch"
   style="--cluster-horizontal-alignment: center; --gutter: 0.5rem">
-
   <span class="visually-hidden">{{ 'language' | t}}</span>
-  {% svg "misc/language", "", "", "color: var(--color-text);" %}
-  <strong>{{ page.lang | langName }}</strong>
+  <strong class="language-current">{% svg "misc/language" %} {{ page.lang | langName }}</strong>
 
   {% for link in page.url | locale_links %}
     <span>•</span>

@@ -1,9 +1,7 @@
 <div class="theme-switch inline-flex items-center justify-center  left-1/2 transform -translate-x-1/2 z-50 pointer-events-none">
-  {% css "local" %}{% include "css/theme-switch.css" %}{% endcss %}
-
   <div class="themes inline-flex items-center gap-3 pointer-events-auto" role="group" aria-label="Theme switch">
-    <button title="System preference" class="theme-btn inline-flex items-center justify-center w-10 h-10 p-0 focus:outline-none text-gray-700 dark:text-gray-200" aria-pressed="false" data-theme="system">{% svg "misc/system" %}<span class="sr-only">System preference</span></button>
-    <button title="Light mode" class="theme-btn inline-flex items-center justify-center w-10 h-10 p-0 focus:outline-none text-gray-700 dark:text-gray-200" aria-pressed="false" data-theme="light">{% svg "misc/sun" %}<span class="sr-only">Light mode</span></button>
-    <button title="Dark mode" class="theme-btn inline-flex items-center justify-center w-10 h-10 p-0 focus:outline-none text-gray-700 dark:text-gray-200" aria-pressed="false" data-theme="dark">{% svg "misc/moon" %}<span class="sr-only">Dark mode</span></button>
+    <button title="System preference" class="theme-btn inline-flex items-center justify-center w-10 h-10 p-0 text-gray-700 dark:text-gray-200" aria-pressed="false" data-theme="system">{% svg "misc/system" %}<span class="sr-only">System preference</span></button>
+    <button title="Light mode" class="theme-btn inline-flex items-center justify-center w-10 h-10 p-0 text-gray-700 dark:text-gray-200" aria-pressed="false" data-theme="light">{% svg "misc/sun" %}<span class="sr-only">Light mode</span></button>
+    <button title="Dark mode" class="theme-btn inline-flex items-center justify-center w-10 h-10 p-0 text-gray-700 dark:text-gray-200" aria-pressed="false" data-theme="dark">{% svg "misc/moon" %}<span class="sr-only">Dark mode</span></button>
   </div>
 </div>
