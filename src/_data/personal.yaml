@@ -2,9 +2,77 @@ email: contact@kissmaelis.com
 address: |-
   Paris, France
 platforms:
-  instagram: https://instagram.com/maeliskiss
-  x-twitter: https://x.com/kissmaelis
-  bluesky: https://bsky.app/profile/kissmaelis.com
-  fansly: https://fans.ly/kissmaelis/t0?r=users
-  mym: https://mym.fans/kissmaelis
-  onlyfans: https://onlyfans.com/kissmaelis/c5?ref=493431389
+  stickyBar:
+    instagram: https://instagram.com/maeliskiss
+    x-twitter: https://x.com/kissmaelis
+    bluesky: https://bsky.app/profile/kissmaelis.com
+    fansly: https://fans.ly/kissmaelis/t0?r=users
+    mym: https://mym.fans/kissmaelis
+    onlyfans: https://onlyfans.com/kissmaelis/c5?ref=493431389
+  content:
+    fansly: 
+      url: https://fans.ly/kissmaelis/t0?r=users
+      label: Fansly
+    mym: 
+      url: https://mym.fans/kissmaelis
+      label: MYM
+    onlyfans: 
+      url: https://onlyfans.com/kissmaelis/c5?ref=493431389
+      label: OnlyFans FREE
+    faphouse:
+      url: https://fhrdr.com/go/99R9B
+      label: FapHouse
+    manyvids:
+      url: https://kissmaelis.manyvids.com/
+      label: ManyVids
+  social:
+    instagram: 
+      url: https://instagram.com/maeliskiss
+      label: Instagram
+    x-twitter: 
+      url: https://x.com/kissmaelis
+      label: X
+    bluesky:
+      url: https://bsky.app/profile/kissmaelis.com
+      label: Bluesky
+    reddit:
+      url: https://www.reddit.com/user/kissmaelis
+      label: Reddit
+    mastodon:
+      url: https://kinkycats.org/@kissmaelis
+      label: Mastodon
+    tiktok:
+      url: https://www.tiktok.com/@kissmaelis
+      label: TikTok
+    fetlife:
+      url: https://fetlife.com/kissmaelis
+      label: FetLife
+  support:
+    luxylist:
+      url: https://luxylist.com/kissmaelis
+      label: LuxyList
+    throne:
+      url: https://www.throne.com/kissmaelis
+      label: Throne
+    youpay:
+      url: https://youpay.me/kissmaelis
+      label: YouPay
+    btc:
+      url: https://coinsend.to/@kissmaelis
+      label: Crypto
+  contact:
+    whatsapp:
+      url: https://wa.me/+33773126419?text=kissmaelis.com
+      label: WhatsApp
+    snapchat:
+      url: https://www.snapchat.com/add/kissmaelisbis
+      label: Snapchat
+    telegram:
+      url: https://t.me/+noBMUWq6vYFiZTE0
+      label: Telegram
+    beacons:
+      url: https://beacons.ai/kissmaelis
+      label: Beacons
+    linktree:
+      url: https://linktr.ee/kissmaelis
+      label: Linktree

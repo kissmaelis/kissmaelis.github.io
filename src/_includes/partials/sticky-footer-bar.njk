@@ -2,7 +2,7 @@
   <div class="repel ontop gutter-m">
     <div class="footer-bar shadow-md padding-m center-cross space-around">
       <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
-          {% for key, value in personal.platforms %}
+          {% for key, value in personal.platforms.stickyBar %}
             {% if value != "" %}
               <a class="no-indicator" target="_blank" data-icon href="{{ value }}" rel="me">
                 <span class="visually-hidden">{{ key | capitalize }}</span>

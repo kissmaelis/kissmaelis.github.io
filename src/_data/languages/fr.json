@@ -11,5 +11,12 @@
     "title": "Thème",
     "light": "clair",
     "dark": "sombre"
-  }
+  },
+  "links": {
+    "content": "Let's have fun!",
+    "social": "Let's be friend!",
+    "support": "Support me",
+    "contact": "Get in touch",
+    "ads": "My ads"
+  } 
 }

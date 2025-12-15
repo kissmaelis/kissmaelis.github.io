@@ -1,0 +1,30 @@
+.social-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 12px;
+  border: 1px solid var(--color-primary);
+  color: var(--color-primary);
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.15s ease, border-color 0.15s ease, transform 0.08s ease;
+  line-height: 1; /* helps keep text vertically centered */
+}
+
+/* focus / hover */
+.social-btn:focus {
+  outline: 2px solid var(--color-secondary);
+  color:  var(--color-secondary);
+  outline-offset: 2px;
+}
+.social-btn:hover {
+  border-color: var(--color-secondary);
+  color: var(--color-secondary);
+  transform: translateY(-1px);
+}
+
+.social-btn svg {
+  max-height: 1.25rem;
+  fill: currentColor;
+}

@@ -1,0 +1,52 @@
+{% css "local" %}{% include "css/social-list.css" %}{% endcss %}
+
+<h2>{{'links.content' | t}}</h2>
+<div class="cluster mt-md" style="--cluster-horizontal-alignment: center; --gutter: 1rem">
+  {% for key, value in personal.platforms.content %}
+    {% if value != "" and value.url !="" and value.label !="" %}
+      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}" rel="me">
+        {% svg 'platform/' + key %}
+        <span>{{ value.label | capitalize }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h2>{{'links.social' | t}}</h2>
+<div class="cluster mt-md" style="--cluster-horizontal-alignment: center; --gutter: 1rem">
+  {% for key, value in personal.platforms.social %}
+    {% if value != "" and value.url !="" and value.label !="" %}
+      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}" rel="me">
+        {% svg 'platform/' + key %}
+        <span>{{ value.label | capitalize }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h2>{{'links.support' | t}}</h2>
+<div class="cluster mt-md" style="--cluster-horizontal-alignment: center; --gutter: 1rem">
+  {% for key, value in personal.platforms.support %}
+    {% if value != "" and value.url !="" and value.label !="" %}
+      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}" rel="me">
+        {% svg 'platform/' + key %}
+        <span>{{ value.label | capitalize }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h2>{{'links.contact' | t}}</h2>
+<div class="cluster mt-md" style="--cluster-horizontal-alignment: center; --gutter: 1rem">
+  {% for key, value in personal.platforms.contact %}
+    {% if value != "" and value.url !="" and value.label !="" %}
+      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}" rel="me">
+        {% svg 'platform/' + key %}
+        <span>{{ value.label | capitalize }}</span>
+      </a>
+    {% endif %}
+  {% endfor %}
+</div>
+
+<h2>{{'links.ads' | t}}</h2>
+{% include 'partials/directories-ads.njk' %}
