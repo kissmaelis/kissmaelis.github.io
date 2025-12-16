@@ -29,11 +29,12 @@
 }
 
 @font-face {
-  font-family: 'Nunito';
-  font-style: bold;
+  font-family: 'Super Magical';
+  font-style: normal;
   font-display: swap;
-  font-weight: 900;
+  font-weight: 800;
   src:
     local(''),
-    url('/assets/fonts/nunito/Nunito-SemiBold.woff2') format('woff2');
+    url('/assets/fonts/super-magical/Super-Magical.woff2') format('woff2');
 }
+

@@ -18,6 +18,10 @@ export default {
         url: '/fr/invitations/'
       },
       {
+        text: 'Mon blog',
+        url: '/fr/blog/'
+      },
+      {
         text: 'Mes liens',
         url: '/fr/liens/'
       }
@@ -42,6 +46,10 @@ export default {
       {
         text: 'Durabilité',
         url: '/fr/durabilite/'
+      },
+      {
+        text: 'Partenaires',
+        url: '/fr/partenaires/'      
       }
     ]
   },
@@ -62,6 +70,10 @@ export default {
       {
         text: 'Delight invitations',
         url: '/en/delight-invitations/'
+      },
+      {
+        text: 'My blog',
+        url: '/en/blog/'
       },
       {
         text: 'My links',
@@ -89,6 +101,10 @@ export default {
         text: 'Sustainability',
         url: '/en/confidentiality/'
       },
+      {
+        text: 'Partners',
+        url: '/en/partners/'      
+      }
     ]
   }
 };

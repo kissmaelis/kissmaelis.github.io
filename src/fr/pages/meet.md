@@ -6,7 +6,7 @@ layout: page
 
 ---
 
-## Mes services
+## Ma proposition
 Je vous propose une parenthèse élégante et sensuelle, placée sous le signe de la douceur, de la complicité et de la légèreté. Une expérience chaleureuse et attentionnée, comme celle d’une petite amie attentive, tendre et naturellement séduisante. Selon l’alchimie, je sais aussi me montrer délicatement espiègle, avec ce soupçon de malice qui fait toute la différence.
 
 Je partage également du contenu sexy et raffiné. Si votre curiosité vous y invite, je vous laisse découvrir davantage à mon sujet via [mes liens](/fr/liens).

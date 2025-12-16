@@ -1,5 +1,7 @@
-<footer class="site-footer mt-l-xl p-s-m">
-  <div class="wrapper">
+
+<footer class="site-footer" style="background-image: var(--gradient-bg); --spot-color: var(--color-bg);">
+  {% svg "divider/soft-bottom", null, "divider" %}
+  <div class="wrapper mt-m p-s-m">
     <div class="cluster gutter-xs">
       <nav class="cluster text-step-0" aria-label="{{ meta.navigation.ariaBottom }}">
         {% for item in navigation[page.lang].bottom %}

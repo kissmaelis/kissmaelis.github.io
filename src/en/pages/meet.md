@@ -5,7 +5,7 @@ description: 'todo'
 layout: page
 ---
 
-## My services
+## My offer
 I offer you an elegant and sensual escape, defined by softness, connection, and effortless ease. A warm, attentive experience—much like being with a caring, affectionate girlfriend. Depending on our chemistry, I can also be subtly playful, with just the right touch of mischievous charm.
 
 I also share refined, sexy content. If your curiosity is piqued, feel free to discover more about me via [my links](/en/links).
