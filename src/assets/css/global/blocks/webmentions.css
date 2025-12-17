@@ -1,3 +1,7 @@
+.webmentions {
+  border-bottom: 1px solid var(--color-bg-accent);
+}
+
 .webmentions--likes-shares ul {
   display: flex;
   margin: 0;

@@ -24,7 +24,8 @@
     var(--color-secondary) 0 92%,
     var(--color-tertiary) 0 100%
   );
-  --gradient-bg: linear-gradient(180deg, var(--color-bg-accent) 0%, var(--color-bg) 100%);
+  --gradient-bg-vertical: linear-gradient(180deg, var(--color-bg-accent) 0%, var(--color-bg) 100%);
+  --gradient-bg-horizontal: linear-gradient(90deg, var(--color-bg-accent) 0%, var(--color-bg) 100%);
 
   --color-light: var(--color-charcoal-100);
   --color-dark: var(--color-charcoal-900);
