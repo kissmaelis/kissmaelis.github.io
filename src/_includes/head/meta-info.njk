@@ -25,10 +25,13 @@
 <!-- Links to information about the author(s) of the document -->
 <link rel="author" href="humans.txt" />
 
-{% if personal.platforms.mastodon %}
-  <!-- Mastodon verified site -->
-  <link rel="me" href="{{ personal.platforms.mastodon }}" />
-{% endif %}
+{% for relsLink in personal.platforms.rels %}
+  <link rel="me" href="{{ relsLink }}" />
+{% endfor %}
+<link
+  rel="webmention"
+  href="https://webmention.io/kissmaelis.com/webmention"
+/>
 
 {% if meta.author.fediverse %}
   <!-- fediverse creator tag -->

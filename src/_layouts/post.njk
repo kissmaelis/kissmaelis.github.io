@@ -3,7 +3,7 @@ layout: base
 schema: BlogPosting
 ---
 
-<div class="region" style="--region-space-top: var(--space-xl-2xl)">
+<div class="region" style="--region-space-top: var(--space-m)">
   <div class="wrapper flow prose">
     <h1>{{ title }}</h1>
 
@@ -31,7 +31,8 @@ schema: BlogPosting
     </p>
 
     {{ content | safe }}
-    {% include 'partials/edit-on.njk' %}
+    
+    {% include "partials/webmentions.njk" %}
   </div>
 
   <!--  h-card infos: https://indieweb.org/authorship -->

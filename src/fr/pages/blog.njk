@@ -1,6 +1,13 @@
 ---
-layout: base
 title: Blog
 description: 'All blog posts can be found here'
 permalink: '/fr/blog/index.html'
+layout: base
 ---
+<h1>{{ title }}</h1>
+
+<ul>
+  {% for post in collections.posts | reverse %}
+      <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+  {% endfor %}
+</ul>

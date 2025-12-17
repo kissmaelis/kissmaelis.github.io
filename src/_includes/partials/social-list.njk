@@ -4,7 +4,7 @@
 <div class="cluster mt-md" style="--cluster-horizontal-alignment: center; --gutter: 1rem">
   {% for key, value in personal.platforms.content %}
     {% if value != "" and value.url !="" and value.label !="" %}
-      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}" rel="me">
+      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}">
         {% svg 'platform/' + key %}
         <span>{{ value.label | capitalize }}</span>
       </a>
@@ -16,7 +16,7 @@
 <div class="cluster mt-md" style="--cluster-horizontal-alignment: center; --gutter: 1rem">
   {% for key, value in personal.platforms.social %}
     {% if value != "" and value.url !="" and value.label !="" %}
-      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}" rel="me">
+      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}">
         {% svg 'platform/' + key %}
         <span>{{ value.label | capitalize }}</span>
       </a>
@@ -28,7 +28,7 @@
 <div class="cluster mt-md" style="--cluster-horizontal-alignment: center; --gutter: 1rem">
   {% for key, value in personal.platforms.support %}
     {% if value != "" and value.url !="" and value.label !="" %}
-      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}" rel="me">
+      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}">
         {% svg 'platform/' + key %}
         <span>{{ value.label | capitalize }}</span>
       </a>
@@ -40,7 +40,7 @@
 <div class="cluster mt-md" style="--cluster-horizontal-alignment: center; --gutter: 1rem">
   {% for key, value in personal.platforms.contact %}
     {% if value != "" and value.url !="" and value.label !="" %}
-      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}" rel="me">
+      <a class="no-indicator social-btn" target="_blank" data-icon href="{{ value.url }}">
         {% svg 'platform/' + key %}
         <span>{{ value.label | capitalize }}</span>
       </a>

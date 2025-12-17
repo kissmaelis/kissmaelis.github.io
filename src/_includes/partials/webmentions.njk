@@ -1,0 +1,9 @@
+<aside>
+    <section class="webmentions" 
+        data-posturl="{{ meta.url}}{{ page.url }}" 
+        {% if aliasUrl and "{{ aliasUrl }}" != "" %} 
+            data-posturlalias="{{ meta.url }}{{ aliasUrl }}"
+        {% endif %}>
+        <h2>Webmentions</h2>
+    </section>
+</aside>

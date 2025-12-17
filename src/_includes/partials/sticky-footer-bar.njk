@@ -4,7 +4,7 @@
       <nav class="cluster" aria-label="{{ meta.navigation.ariaPlatforms }}">
           {% for key, value in personal.platforms.stickyBar %}
             {% if value != "" %}
-              <a class="no-indicator" target="_blank" data-icon href="{{ value }}" rel="me">
+              <a class="no-indicator" target="_blank" data-icon href="{{ value }}">
                 <span class="visually-hidden">{{ key | capitalize }}</span>
                 {% svg 'platform/' + key %}
               </a>
