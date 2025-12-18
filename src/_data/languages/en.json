@@ -18,5 +18,8 @@
     "support": "Support me",
     "contact": "Get in touch",
     "ads": "My ads"
-  } 
+  },
+  "blog": {
+    "writtenOn": "written on"
+  }
 }

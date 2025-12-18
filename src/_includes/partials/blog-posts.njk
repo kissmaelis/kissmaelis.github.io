@@ -1,5 +1,14 @@
 <ul>
   {% for post in collections.posts | reverse %}
-      <li><a href="{{ post.url | url }}">{{ post.data.title }}</a></li>
+      <li>
+        {% for tag in post.data.tags %}
+          {% if tag != "posts" %}
+            <span class="button" data-small-button>{{ tag }}</span>
+          {% endif %}
+        {% endfor %}
+        <a class="font-bold" href="{{ post.url | url }}">{{ post.data.title }}</a>
+        {{ 'blog.writtenOn' | t }}
+        {{ post.data.date | formatDate('YYYY-MM-DD') }}
+      </li>
   {% endfor %}
 </ul>
