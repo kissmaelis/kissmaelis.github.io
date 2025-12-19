@@ -1,8 +1,8 @@
 export const url = process.env.URL || 'http://localhost:8080';
 // Extract domain from `url`
 export const domain = new URL(url).hostname;
-export const siteName = 'kissmaelis';
-export const siteDescription = 'Eleventy starter for building modern, resilient websites';
+export const siteName = 'Maelis Gast - kissmaelis';
+export const siteDescription = 'Maelis Gast — your trusted companion in Paris and Europe. Discreet, elegant, and professional experiences tailored to your preferences.';
 export const siteType = 'Person'; // schema
 export const locale = 'fr_FR';
 export const lang = 'fr';
@@ -75,7 +75,7 @@ export const greenweb = {
   disclosures: [
     {
       docType: 'sustainability-page',
-      url: `${url}/sustainability/`,
+      url: `${url}/en/sustainability/`,
       domain: domain
     }
   ],
@@ -87,11 +87,6 @@ export const tests = {
     customPaths: ['/', '/moi/', '/blog/', '/styleguide/'],
     globalIgnore: []
   }
-};
-export const viewRepo = {
-  // this is for the view/edit on github link. The value in the package.json will be pulled in.
-  allow: true,
-  infoText: 'View this page on GitHub'
 };
 
 export const theme = {

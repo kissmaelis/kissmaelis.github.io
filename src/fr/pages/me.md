@@ -3,6 +3,7 @@ title: A propos de moi
 permalink: /fr/maelis/index.html
 description: 'A propos de Maelis Gast, une femme trans opérée'
 layout: page
+schema: MaelisPerson
 ---
 
 ## En Bref

@@ -3,6 +3,7 @@ title: Créer notre rencontre
 permalink: /fr/rencontre/index.html
 description: 'Créer une rencontre mémorable avec Maelis'
 layout: page
+schema: Services
 
 ---
 

@@ -3,6 +3,7 @@ title: Design our meeting
 permalink: /en/meet/index.html
 description: 'Design an unforgetable meeting with Maelis'
 layout: page
+schema: Services
 ---
 
 ## My offer

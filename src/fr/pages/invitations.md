@@ -3,6 +3,7 @@ title: Invitations au plaisir
 permalink: /fr/invitations/index.html
 description: 'Retrouvez ici la listes de mes invitations'
 layout: page
+schema: Services
 ---
 
 *Ces tarifs sont indicatifs et nous pouvons personnaliser l'expérience de vos rêves sur mesures.*

@@ -3,6 +3,7 @@ title: About me
 permalink: /en/maelis/index.html
 description: 'About Maelis Gast, postop trans woman'
 layout: page
+schema: MaelisPerson
 ---
 
 ## At a glance
