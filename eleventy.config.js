@@ -33,7 +33,7 @@ export default async function (eleventyConfig) {
   });
 
   // --------------------- custom watch targets
-  eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg}');
+  eleventyConfig.addWatchTarget('./src/assets/**/*.{css,js,svg,png,jpeg,webp,ogg,mp3}');
   eleventyConfig.addWatchTarget('./src/_includes/**/*.{webc,njk,html,md,js}');
 
   // --------------------- WSL Chokidar polling config 
@@ -121,7 +121,7 @@ export default async function (eleventyConfig) {
   // --------------------- Passthrough File Copy
 
   // -- same path
-  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images'].forEach(path =>
+  ['src/assets/fonts/', 'src/assets/images/template', 'src/assets/og-images', 'src/assets/audio'].forEach(path =>
     eleventyConfig.addPassthroughCopy(path)
   );
 
