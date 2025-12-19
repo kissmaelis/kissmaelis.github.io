@@ -99,7 +99,7 @@ export default {
       },
       {
         text: 'Sustainability',
-        url: '/en/confidentiality/'
+        url: '/en/sustainability/'
       },
       {
         text: 'Partners',
