@@ -1,7 +1,7 @@
 ---
 title: A propos de moi
 permalink: /fr/maelis/index.html
-description: 'to do'
+description: 'A propos de Maelis Gast, une femme trans opérée'
 layout: page
 ---
 
@@ -12,6 +12,8 @@ layout: page
 - **Femme trans post-op**, pleinement incarnée, à l’aise dans sa féminité
 - **Petits seins naturels**, délicats et spontanés
 - **Joyeuse par nature**, doucement espiègle, un peu coquine quand l’envie se fait sentir
+
+![Selfie of Maelis](../../assets/images/gallery/portrait1.webp "Selfie of Maelis")
 
 ## En détails
 
@@ -51,5 +53,7 @@ Mes projets sont personnels et artistiques. J’ai envie de vivre selon mes éla
 
 Si tu me lis encore, j’aimerais que tu ressentes une proximité douce, une curiosité tranquille, un désir calme. J’aime les rencontres qui prennent le temps, celles qui s’inscrivent dans la continuité et la complicité.
 
-Peut-être que tout commence ici.
+<p class="cluster gutter-xs-s">
+    <a href="/fr/rencontre" class="button" data-button-variant="primary">Peut-être que tout commence ici.</a>
+</p>
 

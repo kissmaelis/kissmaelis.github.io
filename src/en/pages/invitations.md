@@ -1,7 +1,7 @@
 ---
 title: Delight invitations
 permalink: /en/delight-invitations/index.html
-description: 'todo'
+description: 'Invitations and offerings of Maelis'
 layout: page
 ---
 *These rates are indicative and we can tailor your dream experience with a dedicated quote.*

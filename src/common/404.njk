@@ -1,0 +1,12 @@
+---
+title: Not found
+layout: page
+permalink: /404.html
+eleventyExcludeFromCollections: true
+excludeFromSitemap: true
+---
+
+<h2>{{ 'error.sorry' | t }}</h2>
+
+<a href="/">{{'error.visitHome' | t }}</a>
+<p>{{'error.reportByMail' | t }} <a href="mailto:{{ meta.creator.email }}">{{ meta.creator.email }}</a></p>

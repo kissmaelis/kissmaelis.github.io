@@ -31,7 +31,7 @@ is-land:not(:defined) .gallery dialog + button {
 }
 
 .gallery dialog::backdrop {
-  background-image: var(--gradient-stripes);
+  background-color: var(--color-bg);
   opacity: 0.9;
   filter: brightness(50%);
 }

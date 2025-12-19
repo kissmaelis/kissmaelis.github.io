@@ -21,5 +21,11 @@
   },
   "blog": {
     "writtenOn": "written on"
+  },
+  "error": {
+    "notFound": "Not Found",
+    "sorry": "Sorry, that page doesn't exist!",
+    "visitHome": "Please try visiting the home page!",
+    "reportByMail": "Please let me know if you encounter more errors: "
   }
 }

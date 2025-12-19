@@ -1,7 +1,7 @@
 ---
 title: Invitations au plaisir
 permalink: /fr/invitations/index.html
-description: 'todo!'
+description: 'Retrouvez ici la listes de mes invitations'
 layout: page
 ---
 

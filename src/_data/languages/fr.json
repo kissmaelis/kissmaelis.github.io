@@ -21,5 +21,11 @@
   },
   "blog": {
     "writtenOn": "écrit le"
+  },
+  "error": {
+    "notFound": "Page non trouvée",
+    "sorry": "Désolé, cette page n'existe pas !",
+    "visitHome": "Essayez de visiter la page d'accueil !",
+    "reportByMail": "Veuillez me faire savoir si vous rencontrez d'autres erreurs : "
   }
 }

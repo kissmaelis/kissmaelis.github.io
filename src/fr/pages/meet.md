@@ -1,7 +1,7 @@
 ---
 title: Créer notre rencontre
 permalink: /fr/rencontre/index.html
-description: 'todo'
+description: 'Créer une rencontre mémorable avec Maelis'
 layout: page
 
 ---
@@ -13,7 +13,9 @@ Je partage également du contenu sexy et raffiné. Si votre curiosité vous y in
 
 N'hésitez pas à me faire part de vos fantasmes, je ne les jugerez pas même si je n'accepte pas de les réaliser avec vous.
 
-[Choisissez l’offre qui vous correspond](/fr/invitations)
+<p class="cluster gutter-xs-s">
+    <a href="/fr/invitations" class="button" data-button-variant="primary">Choisissez l’offre qui vous correspond</a>
+</p>
 
 ## Prenez rendez-vous avec moi
 Pour toute demande de rencontre, merci de me contacter via [WhatsApp](https://wa.me/+33773126419?text=kissmaelis.com), [e-mail](contact@kissmaelis.com) ou via le [formulaire dédié](https://tally.so/r/mYL5r0).
@@ -49,11 +51,11 @@ Nous débutons ensuite notre moment ensemble selon ce qui aura été convenu, to
 ## Mes moyens de paiement 
 Pour répondre à vos besoins de discrétion, plusieurs modes de paiement sont acceptés :
 - Espèces 
-- Pleenk
-- Cryptomonnaies
-- PayPal
-- YouPay.me
-- Throne
+- [Pleenk](https://cloud.umami.is/q/XB57qC1QM)
+- [Cryptomonnaies](https://cloud.umami.is/q/OC1hgRpW1)
+- [PayPal](https://cloud.umami.is/q/5oB1RE8nq)
+- [YouPay.me](https://cloud.umami.is/q/lWKaNGieI)
+- [Throne](https://cloud.umami.is/q/6zdhXnIs4)
 
 ## Après notre rencontre
 À l’issue de notre rendez-vous, un message de votre part me fera toujours plaisir. Je suis également attentive à vos retours et serai ravie de vous retrouver prochainement pour un nouveau moment partagé.

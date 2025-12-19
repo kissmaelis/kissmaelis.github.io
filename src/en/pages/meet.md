@@ -1,7 +1,7 @@
 ---
 title: Design our meeting
 permalink: /en/meet/index.html
-description: 'todo'
+description: 'Design an unforgetable meeting with Maelis'
 layout: page
 ---
 
@@ -12,7 +12,9 @@ I also share refined, sexy content. If your curiosity is piqued, feel free to di
 
 Your desires and fantasies may be discussed openly and without judgment. Even if I do not accept all of them, our exchanges will always take place with respect and discretion.
 
-[Choose the offer that suits you best](/en/delight-invitations).
+<p class="cluster gutter-xs-s">
+    <a href="/en/delight-invitations" class="button" data-button-variant="primary">Choose the offer that suits you best</a>
+</p>
 
 ## Book an appointement
 To request a meeting, please contact me via [WhatsApp](https://wa.me/+33773126419?text=kissmaelis.com), by [e-mail](contact@kissmaelis.com) or through the [dedicated form (in french)](https://tally.so/r/mYL5r0) (in french only for now).
@@ -42,16 +44,16 @@ Without prior notice, or in the absence of any communication, no future appointm
 ## During our meeting
 Please discreetly place my gift in an envelope at the beginning of the session.
 
-We will then enjoy our time together according to what has been agreed upon, always with mutual consent and respect. If this is your first experience, rest assured — I am used to it and will make you feel comfortable with ease and gentleness.
+We will then enjoy our time together according to what has been agreed upon, always with mutual consent and respect. If this is your first experience, rest assured, I am used to it and will make you feel comfortable with ease and gentleness.
 
 ## Payment methods
 To accommodate your discretion, several payment options are available:
 - Cash
-- Pleenk
-- Cryptomonnaies
-- PayPal
-- YouPay.me
-- Throne
+- [Pleenk](https://cloud.umami.is/q/XB57qC1QM)
+- [Cryptocurrencies](https://cloud.umami.is/q/OC1hgRpW1)
+- [PayPal](https://cloud.umami.is/q/5oB1RE8nq)
+- [YouPay.me](https://cloud.umami.is/q/lWKaNGieI)
+- [Throne](https://cloud.umami.is/q/6zdhXnIs4)
 
 ## After our meeting   
-After our appointment, feel free to reach out — I will be delighted to hear from you. I also welcome your feedback and look forward to seeing you again very soon for another shared moment.
+After our appointment, feel free to reach out! I will be delighted to hear from you. I also welcome your feedback and look forward to seeing you again very soon for another shared moment.
