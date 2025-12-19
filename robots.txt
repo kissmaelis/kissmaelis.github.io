@@ -1,7 +1,7 @@
 User-agent: *
 Disallow: /404.html
 
-Sitemap: https://kissmaelis.com/blog/sitemap.xml
+Sitemap: https://kissmaelis.com/sitemap.xml
 
 # https://github.com/ai-robots-txt/ai.robots.txt/blob/main/robots.txt
 
