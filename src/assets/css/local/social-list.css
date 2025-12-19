@@ -25,6 +25,7 @@
 }
 
 .social-btn svg {
-  max-height: 1.25rem;
+  max-height: 2rem;
+  max-width: 2rem;
   fill: currentColor;
 }
