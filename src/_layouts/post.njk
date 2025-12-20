@@ -37,10 +37,14 @@ schema: BlogPosting
 
   {% if fedi_url %}
     <div style="display:none;">
-        {%- for url in fedi_url %}
-            <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
-        {%- endfor %}
+      {%- for url in fedi_url %}
+        <a rel="syndication" class="u-syndication" href="{{ url }}"></a>
+      {%- endfor %}
     </div>
+  {% endif %}
+
+  {% if shortlink %}
+    <link rel="shortlink" href="{{ shortlink }}" />
   {% endif %}
 
   <!--  h-card infos: https://indieweb.org/authorship -->
