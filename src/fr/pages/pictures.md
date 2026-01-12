@@ -37,6 +37,9 @@ gallery:
   - image: ./src/assets/images/gallery/spicy-pinky.webp
     alt: "Photo de Maelis censurée laissant imaginer une coloration rose de ses poils pubiens"
     caption: "Photo de Maelis censurée laissant imaginer une coloration rose de ses poils pubiens"
+  - image: ./src/assets/images/gallery/shibari.webp
+    alt: "Photo de Maelis à genoux attaché avec des cordes et en petite culotte"
+    caption: "Photo de Maelis à genoux attaché avec des cordes et en petite culotte"
 
 ---
 {% include "partials/gallery.njk" %}

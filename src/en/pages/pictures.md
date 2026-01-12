@@ -36,7 +36,10 @@ gallery:
     caption: 'todo'
   - image: ./src/assets/images/gallery/spicy-pinky.webp
     alt: 'todo'
-    caption: 'todo' 
+    caption: 'todo'
+  - image: ./src/assets/images/gallery/shibari.webp
+    alt: "Photo of Maelis in shibari"
+    caption: "Photo of Maelis in shibari"
 
 ---
 <p> {{ description }}</p>
