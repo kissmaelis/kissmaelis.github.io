@@ -44,10 +44,6 @@ export default {
         url: '/fr/confidentialite/'
       },
       {
-        text: 'Durabilité',
-        url: '/fr/durabilite/'
-      },
-      {
         text: 'Partenaires',
         url: '/fr/partenaires/'      
       }
@@ -96,10 +92,6 @@ export default {
       {
         text: 'Confidentiality policy',
         url: '/en/confidentiality/'
-      },
-      {
-        text: 'Sustainability',
-        url: '/en/sustainability/'
       },
       {
         text: 'Partners',
