@@ -28,10 +28,6 @@ export default {
     ],
     bottom: [
       {
-        text: 'Agenda',
-        url: '/fr/agenda/'
-      },
-      {
         text: 'FAQ',
         url: '/fr/faq/'
       },
@@ -77,10 +73,6 @@ export default {
       }
     ],
     bottom: [
-      {
-        text: 'Agenda',
-        url: '/en/agenda/'
-      },
       {
         text: 'FAQ',
         url: '/en/faq/'
