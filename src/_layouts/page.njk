@@ -3,6 +3,7 @@ layout: base
 ---
 
 <div class="region wrapper flow prose" style="--region-space-top: var(--space-m-m)">
+  {% include "partials/language-banner.njk" %}
   <h1>{{ title }}</h1>
   {{ content | safe }}
 </div>

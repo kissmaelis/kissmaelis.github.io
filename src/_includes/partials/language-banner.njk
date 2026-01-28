@@ -1,0 +1,9 @@
+<div id="language-banner" class="language-banner" style="display: none;">
+    <p>We noticed that your browser language is different from the website language. Would you like to switch to your preferred language?</p>
+    <button id="redirect-button">Switch Language</button>
+    <button id="close-banner">Close</button>
+</div>
+
+{%- js "inline" %}
+    {% include "scripts/redirect-prefered-language.js" %}
+{% endjs %}
