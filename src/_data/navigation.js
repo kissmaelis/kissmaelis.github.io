@@ -14,10 +14,6 @@ export default {
         url: '/fr/rencontre/'
       },
       {
-        text: 'Invitations au plaisir',
-        url: '/fr/invitations/'
-      },
-      {
         text: 'Mon blog',
         url: '/fr/blog/'
       },
@@ -58,10 +54,6 @@ export default {
       {
         text: 'Design our meeting',
         url: '/en/meet/'
-      },
-      {
-        text: 'Delight invitations',
-        url: '/en/delight-invitations/'
       },
       {
         text: 'My blog',

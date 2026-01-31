@@ -58,3 +58,14 @@ To accommodate your discretion, several payment options are available:
 
 ## After our meeting   
 After our appointment, feel free to reach out! I will be delighted to hear from you. I also welcome your feedback and look forward to seeing you again very soon for another shared moment.
+
+## Menu
+*These rates are indicative and we can tailor your dream experience with a dedicated quote.*
+
+| Service | Time (min) | Price (€) |
+| :------ | ----: | ----: |
+| Video call | 10 | 30 |
+| Sexting | 15 | 30 |
+| Social time | 60 | 100 |
+| Incall | N/A | N/A | 
+| Outcall | 60 | 300 |

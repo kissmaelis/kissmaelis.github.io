@@ -61,3 +61,13 @@ Pour répondre à vos besoins de discrétion, plusieurs modes de paiement sont a
 ## Après notre rencontre
 À l’issue de notre rendez-vous, un message de votre part me fera toujours plaisir. Je suis également attentive à vos retours et serai ravie de vous retrouver prochainement pour un nouveau moment partagé.
 
+## Mon menu
+*Ces tarifs sont indicatifs et nous pouvons personnaliser l'expérience de vos rêves sur mesures.*
+
+| Service | Time (min) | Price (€) |
+| :------ | ----: | ----: |
+| Appel vidéo | 10 | 30 |
+| Sexting | 15 | 30 |
+| Temps social | 60 | 100 |
+| Incall | N/A | N/A | 
+| Outcall | 60 | 300 |
