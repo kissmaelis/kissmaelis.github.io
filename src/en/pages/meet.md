@@ -48,14 +48,7 @@ Please discreetly place my gift in an envelope at the beginning of the session.
 We will then enjoy our time together according to what has been agreed upon, always with mutual consent and respect. If this is your first experience, rest assured, I am used to it and will make you feel comfortable with ease and gentleness.
 
 ## Payment methods
-To accommodate your discretion, several payment options are available:
-- Cash
-- [Pleenk](https://cloud.umami.is/q/XB57qC1QM)
-- [Cryptocurrencies](https://cloud.umami.is/q/OC1hgRpW1)
-- [PayPal](https://cloud.umami.is/q/5oB1RE8nq)
-- [YouPay.me](https://cloud.umami.is/q/lWKaNGieI)
-- [Throne](https://cloud.umami.is/q/6zdhXnIs4)
-
+To accommodate your discretion, several payment options are available: in *cash*, by *credit/debit card* or [*cryptocurrencies*](https://cloud.umami.is/q/OC1hgRpW1).
 ## After our meeting   
 After our appointment, feel free to reach out! I will be delighted to hear from you. I also welcome your feedback and look forward to seeing you again very soon for another shared moment.
 

@@ -50,13 +50,7 @@ Sans prévention préalable ou en cas d’absence de nouvelles, aucun nouveau re
 Nous débutons ensuite notre moment ensemble selon ce qui aura été convenu, toujours dans le respect mutuel et le consentement de chacun. Si c’est votre première expérience, soyez rassuré : je saurai vous mettre à l’aise avec douceur et naturel.
 
 ## Mes moyens de paiement 
-Pour répondre à vos besoins de discrétion, plusieurs modes de paiement sont acceptés :
-- Espèces 
-- [Pleenk](https://cloud.umami.is/q/XB57qC1QM)
-- [Cryptomonnaies](https://cloud.umami.is/q/OC1hgRpW1)
-- [PayPal](https://cloud.umami.is/q/5oB1RE8nq)
-- [YouPay.me](https://cloud.umami.is/q/lWKaNGieI)
-- [Throne](https://cloud.umami.is/q/6zdhXnIs4)
+Pour répondre à vos besoins de discrétion, plusieurs modes de paiement sont acceptés en *espèces*, par *carte bancaire* ou en [*cryptomonnaies*](https://cloud.umami.is/q/OC1hgRpW1).
 
 ## Après notre rencontre
 À l’issue de notre rendez-vous, un message de votre part me fera toujours plaisir. Je suis également attentive à vos retours et serai ravie de vous retrouver prochainement pour un nouveau moment partagé.
