@@ -3,7 +3,6 @@ title: Privacy Policy
 discover:
   title: Privacy Policy
 permalink: /en/confidentiality/index.html
-
 description: Privacy Policy
 date: "Last Modified"
 layout: page
