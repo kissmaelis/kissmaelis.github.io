@@ -15,7 +15,7 @@ Je partage également du contenu sexy et raffiné. Si votre curiosité vous y in
 N'hésitez pas à me faire part de vos fantasmes, je ne les jugerez pas même si je n'accepte pas de les réaliser avec vous.
 
 <p class="cluster gutter-xs-s">
-    <a href="/fr/invitations" class="button" data-button-variant="primary">Choisissez l’offre qui vous correspond</a>
+    <a href="#menu" class="button" data-button-variant="primary">Choisissez l’offre qui vous correspond</a>
 </p>
 
 ## Prenez rendez-vous avec moi
@@ -61,7 +61,7 @@ Pour répondre à vos besoins de discrétion, plusieurs modes de paiement sont a
 ## Après notre rencontre
 À l’issue de notre rendez-vous, un message de votre part me fera toujours plaisir. Je suis également attentive à vos retours et serai ravie de vous retrouver prochainement pour un nouveau moment partagé.
 
-## Mon menu
+# Menu
 *Ces tarifs sont indicatifs et nous pouvons personnaliser l'expérience de vos rêves sur mesures.*
 
 | Service | Time (min) | Price (€) |

@@ -14,7 +14,7 @@ I also share refined, sexy content. If your curiosity is piqued, feel free to di
 Your desires and fantasies may be discussed openly and without judgment. Even if I do not accept all of them, our exchanges will always take place with respect and discretion.
 
 <p class="cluster gutter-xs-s">
-    <a href="/en/delight-invitations" class="button" data-button-variant="primary">Choose the offer that suits you best</a>
+    <a href="#menu" class="button" data-button-variant="primary">Choose the offer that suits you best</a>
 </p>
 
 ## Book an appointement
@@ -59,7 +59,7 @@ To accommodate your discretion, several payment options are available:
 ## After our meeting   
 After our appointment, feel free to reach out! I will be delighted to hear from you. I also welcome your feedback and look forward to seeing you again very soon for another shared moment.
 
-## Menu
+# Menu
 *These rates are indicative and we can tailor your dream experience with a dedicated quote.*
 
 | Service | Time (min) | Price (€) |
