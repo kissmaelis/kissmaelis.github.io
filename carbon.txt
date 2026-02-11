@@ -1,10 +1,9 @@
 [org]
 disclosures = [
-    { doc_type='sustainability-page', url='https://kissmaelis.com/en/sustainability/', domain='kissmaelis.com' }
 ]
 
 [upstream]
 services = [
-    { domain='github.com', service_type='cdn' }
+    { domain='kissmaelis.com', service_type='' }
 ]
 
