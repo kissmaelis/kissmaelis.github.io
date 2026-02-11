@@ -72,8 +72,14 @@ export const navigation = {
 };
 export const greenweb = {
   // https://carbontxt.org/
-  disclosures: [],
-  services: [{ domain: 'ionos.fr', service_type: 'vps' }]
+  disclosures: [
+    {
+      docType: 'sustainability-page',
+      url: `${url}/en/sustainability/`,
+      domain: domain
+    }
+  ],
+  services: [{domain: 'ionos.fr', serviceType: 'vps'}]
 };
 export const tests = {
   pa11y: {
