@@ -73,7 +73,7 @@ export const navigation = {
 export const greenweb = {
   // https://carbontxt.org/
   disclosures: [],
-  services: [{ domain: 'kissmaelis.com', service_type: 'ionos' }]
+  services: [{ domain: 'ionos.fr', service_type: 'vps' }]
 };
 export const tests = {
   pa11y: {
