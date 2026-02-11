@@ -4,6 +4,6 @@ disclosures = [
 
 [upstream]
 services = [
-    { domain='kissmaelis.com', service_type='' }
+    { domain='ionos.fr', service_type='' }
 ]
 
