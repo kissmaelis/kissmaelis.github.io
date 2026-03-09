@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["nodejs_20"]  # Use Node 20
+
+[phases.install]
+cmds = ["npm ci"]         # Or "yarn install" / "pnpm install"
+
+[phases.build]
+cmds = ["npm run build"]  # For CRA use "build", for Vite it's usually "build"
+
+[start]
+cmd = "npx serve -s dist -l 3000"  # Replace dist with build for CRA
