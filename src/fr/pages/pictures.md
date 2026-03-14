@@ -43,3 +43,5 @@ gallery:
 
 ---
 {% include "partials/gallery.njk" %}
+<h2>Mes videos</h2>
+{% include "partials/videos.njk" %}

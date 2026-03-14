@@ -44,3 +44,5 @@ gallery:
 ---
 <p> {{ description }}</p>
 {% include "partials/gallery.njk" %}
+<h1>My videos</h1>
+{% include "partials/videos.njk" %}

@@ -6,16 +6,12 @@ export default {
         url: '/fr/maelis/'
       },
       {
-        text: 'Mes photos',
+        text: 'Mes photos et videos',
         url: '/fr/photos/'
       },
       {
         text: 'Créer notre rencontre',
         url: '/fr/rencontre/'
-      },
-      {
-        text: 'Mon blog',
-        url: '/fr/blog/'
       },
       {
         text: 'Mes liens',
@@ -48,16 +44,12 @@ export default {
         url: '/en/maelis/'
       },
       {
-        text: 'My pictures',
+        text: 'My pictures and videos',
         url: '/en/pictures/'
       },
       {
         text: 'Design our meeting',
         url: '/en/meet/'
-      },
-      {
-        text: 'My blog',
-        url: '/en/blog/'
       },
       {
         text: 'My links',
