@@ -28,7 +28,7 @@ Si tu préfères m'écouter lire le texte ci-dessous :
 
 ### Ma présence
 
-Je m’appelle Maelis Gast, aussi connue sous le pseudonyme kissmaelis. J’ai 30 ans et je vis à Paris. On me reconnaît d’abord à mon sourire, celui qui arrive avant les mots et à cette joie tranquille qui éclaire les rencontres.
+Je m’appelle Maelis Gast, aussi connue sous le pseudonyme kissmaelis. J’ai 30 ans et je vis à Marseille. On me reconnaît d’abord à mon sourire, celui qui arrive avant les mots et à cette joie tranquille qui éclaire les rencontres.
 
 Je suis une femme douce et solaire, d’un calme qui rassure. Et puis, parfois, lorsque le jeu s’invite, une espièglerie légère affleure, comme une étincelle. J’aime les ambiances vivantes et rieuses, les instants où l’on se sent libre d’être soi, tout en sachant ralentir, respirer, prendre le temps quand il devient précieux.
 
