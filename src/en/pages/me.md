@@ -20,7 +20,7 @@ schema: MaelisPerson
 
 ### My presence
 
-My name is Maelis Gast, also known as kissmaelis. I am 30 years old and live in Paris. I am often recognized first by my smile. The kind that arrives before words and by a quiet joy that naturally lights up encounters.
+My name is Maelis Gast, also known as kissmaelis. I am 30 years old and live in Marseille, France. I am often recognized first by my smile. The kind that arrives before words and by a quiet joy that naturally lights up encounters.
 
 I am a soft and radiant woman, with a calm presence that feels reassuring. And then, sometimes, when playfulness is invited, a gentle mischievous spark appears. I love lively, laughter-filled atmospheres, moments where one feels free to be themselves, while also knowing how to slow down, breathe, and take time when it becomes precious.
 
