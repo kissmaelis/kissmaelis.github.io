@@ -17,9 +17,6 @@ platforms:
     mym: https://cloud.umami.is/q/UkzMwPwjg
     onlyfans: https://cloud.umami.is/q/st6Si3PW7
   content:
-    fansly: 
-      url: https://cloud.umami.is/q/gEw6u5vAd
-      label: Fansly
     mym: 
       url: https://cloud.umami.is/q/S80Guf69W
       label: MYM
@@ -29,9 +26,6 @@ platforms:
     faphouse:
       url: https://cloud.umami.is/q/0NhniSqc9
       label: FapHouse
-    manyvids:
-      url: https://cloud.umami.is/q/Ot9td6eG6
-      label: ManyVids
   social:
     instagram: 
       url: https://cloud.umami.is/q/4YmCxCMUd
@@ -61,9 +55,6 @@ platforms:
     thingstogetme:
       url: https://www.thingstogetme.com/480023u916ee?ref=480023u916ee
       label: Things to Get Me
-    youpay:
-      url: https://cloud.umami.is/q/lWKaNGieI
-      label: YouPay
     btc:
       url: https://cloud.umami.is/q/OC1hgRpW1
       label: Crypto
@@ -71,15 +62,6 @@ platforms:
     whatsapp:
       url: https://cloud.umami.is/q/snlippKS7
       label: WhatsApp
-    snapchat:
-      url: https://cloud.umami.is/q/4mVAzDzMO
-      label: Snapchat
     telegram:
       url: https://cloud.umami.is/q/YFsUVxO4R
       label: Telegram
-    beacons:
-      url: https://cloud.umami.is/q/HHuSB4fvy
-      label: Beacons
-    linktree:
-      url: https://cloud.umami.is/q/OEyojYmyp
-      label: Linktree
